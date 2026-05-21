@@ -8,10 +8,12 @@ Landing page revisada da agência **Tá Online** (Niterói/RJ, dev solo).
 ## 1. Negócio
 
 - Agência pequena focada em sites para 3 nichos: **personal trainers/studios**, **advogados** e **clínicas de estética**.
-- **3 páginas** com mesmo design system mas conteúdo/paleta por nicho:
-  - `/` → personal trainers e studios (principal)
+- **4 páginas**: 1 hub neutro na raiz + 3 landings com mesmo design system mas conteúdo/paleta por nicho:
+  - `/` → hub minimalista (bifurcação para os 3 nichos, sem conteúdo de venda)
+  - `/personal` → personal trainers e studios
   - `/advogados` → advogados e escritórios
   - `/estetica` → clínicas de estética
+- **Por que hub na raiz**: domínio cru (`agenciataonline.com.br`) é divulgação genérica da marca. Anúncio segmentado manda link específico (`/personal`, `/advogados`, `/estetica`) — não cai no hub.
 - Modelo: **setup único + mensalidade**, posicionamento "tudo cuidado por nós, você não precisa pensar em parte técnica".
 - A mensalidade é vendida como **benefício** (alterações ilimitadas, suporte, hospedagem inclusa), nunca como custo.
 
@@ -72,9 +74,9 @@ lib/
   schema.ts                   # buildJsonLd(content) → LocalBusiness | LegalService
   content/
     types.ts                  # interface NicheContent
-    personal.ts               # copy do nicho /
+    personal.ts               # copy do nicho /personal
     advogados.ts              # copy do nicho /advogados
-    estetica.ts               # (FALTA CRIAR)
+    estetica.ts               # copy do nicho /estetica
 
 components/
   ui/
@@ -101,12 +103,13 @@ components/
 
 app/
   layout.tsx                  # fontes + metadata base
-  page.tsx                    # / (renderiza NichePage com personalContent)
+  page.tsx                    # / → HubPage (não usa NichePage; auto-contida com data-theme="hub")
+  personal/page.tsx           # /personal (NichePage + personalContent)
   advogados/page.tsx          # /advogados
-  estetica/page.tsx           # (FALTA CRIAR)
-  sitemap.ts                  # 3 rotas
+  estetica/page.tsx           # /estetica
+  sitemap.ts                  # 4 rotas
   robots.ts
-  globals.css                 # @theme + paletas dos 3 [data-theme]
+  globals.css                 # @theme + paletas dos 4 [data-theme] (3 nichos + hub)
   icon.svg                    # favicon SVG vetorial
 ```
 
@@ -132,18 +135,20 @@ Tudo está em `lib/content/<nicho>.ts` seguindo o tipo `NicheContent`. O compone
 ### Identidade visual
 - **Logo wordmark**: `<Logo>` em `components/ui/Logo.tsx`. "tá" semibold + "online" regular cor `fg-muted` + ponto em cor `accent`. Tamanhos: `sm` / `md` / `lg` / `xl`.
 - **Favicon** (`app/icon.svg`): símbolo T-bar branco + ponto champagne sobre quadrado preto arredondado.
-- **Header sticky** mínimo (só Logo + âncora "Investimento", sem navegação cruzada).
-- **Navegação cruzada entre nichos** = **só no footer** (`crossSell`).
+- **Header sticky** mínimo (só Logo + âncora "Investimento", sem navegação cruzada). **Só nas 3 páginas de nicho** — hub não tem header.
+- **Navegação cruzada entre nichos** = **só no footer** (`crossSell`) nas páginas de nicho. No hub, os 3 cards JÁ são o cross-sell.
+- **Hub** (`/`) é auto-contido em `app/page.tsx` — não usa `NichePage`, `SiteHeader` nem `Footer` de nicho. Tem Logo central + H1 + subhead + 3 cards + footer mínimo + `FloatingWhatsappBar`. Schema é `Organization` (sem nicho).
 - **Sobre** tem um círculo placeholder que mostra `<Logo size="lg">` no centro. Quando o usuário enviar a foto, substituir por `<Image src="/sobre.jpg" ... />` (comentário TODO já no código).
 - **Portfólio** usa `BrowserMock` em SVG/CSS. Cada nicho tem 2 demos fictícios com `href: null` (badge "Em breve"). Quando o usuário gerar URLs reais, trocar `href: null` em `lib/content/<nicho>.ts`.
 
 ### Paletas (em `app/globals.css`)
 
-| Nicho | Fundo | Texto | Primária | Accent |
+| Tema | Fundo | Texto | Primária | Accent |
 |---|---|---|---|---|
-| `personal` | `#f7f4ee` creme | `#1a1f1c` | sage `#3a5246` | champagne `#c9a87c` |
+| `personal` (default `:root`) | `#f7f4ee` creme | `#1a1f1c` | sage `#3a5246` | champagne `#c9a87c` |
 | `advogados` | `#f7f8fa` neutro | `#0c1a2e` | marinho `#14304f` | dourado `#b8924d` |
 | `estetica` | `#fdf8f4` rosado | `#1f1611` | rose escuro `#6d3d3d` | rose nude `#d4a89a` + soft champagne `#c9a87c` |
+| `hub` | `#fafaf8` neutro morno | `#1a1a1a` cinza escuro | sage `#3a5246` (herda da marca) | champagne `#c9a87c` |
 
 ### Preços (por nicho)
 
@@ -153,13 +158,14 @@ Tudo está em `lib/content/<nicho>.ts` seguindo o tipo `NicheContent`. O compone
 | `advogados` | R$ 2.497 | 3x R$ 867 | R$ 197/mês |
 | `estetica` | R$ 1.997 | 3x R$ 697 | R$ 147/mês |
 
-### SEO por nicho (já implementado no que está pronto)
+### SEO por página
 
-| Nicho | Schema | Title |
+| Rota | Schema | Title |
 |---|---|---|
-| `personal` | `LocalBusiness` | `Tá Online — Sites para Personal Trainers e Studios em Niterói` |
-| `advogados` | `LegalService` | `Tá Online — Sites para Advogados e Escritórios em Niterói` |
-| `estetica` | `LocalBusiness` | `Tá Online — Sites para Clínicas de Estética em Niterói` |
+| `/` (hub) | `Organization` | `Tá Online — Sites para pequenos negócios em Niterói` |
+| `/personal` | `LocalBusiness` | `Tá Online — Sites para Personal Trainers e Studios em Niterói` |
+| `/advogados` | `LegalService` | `Tá Online — Sites para Advogados e Escritórios em Niterói` |
+| `/estetica` | `LocalBusiness` | `Tá Online — Sites para Clínicas de Estética em Niterói` |
 
 ---
 
@@ -167,24 +173,34 @@ Tudo está em `lib/content/<nicho>.ts` seguindo o tipo `NicheContent`. O compone
 
 | Commit | Etapa | Status |
 |---|---|---|
-| `38fd775` | Etapa 1 — Scaffold (fundação + componentes) | ✅ commitado |
-| `4b1e651` | Etapa 2 — Página `/` (personal) + branding (Logo + favicon + SiteHeader) | ✅ commitado |
-| `4e23efd` | Etapa 3 — Página `/advogados` (copy do nicho jurídico) | ✅ commitado |
-| `205e1e2` | Fix avulso — `SiteHeader` usa `next/link` no logo (eliminou warn `@next/next/no-html-link-for-pages`) | ✅ commitado |
-| `5b9c078` | Etapa 4 — Página `/estetica` (copy do nicho de clínicas) | ✅ commitado |
-| —        | Etapa 5 — lint ✓, build ✓ (3 rotas estáticas: `/`, `/advogados`, `/estetica`) | ✅ verificado |
+| `38fd775` | Etapa 1 — Scaffold (fundação + componentes) | ✅ pushed |
+| `4b1e651` | Etapa 2 — Página `/` (personal) + branding (Logo + favicon + SiteHeader) | ✅ pushed |
+| `4e23efd` | Etapa 3 — Página `/advogados` | ✅ pushed |
+| `205e1e2` | Fix — `SiteHeader` usa `next/link` no logo | ✅ pushed |
+| `5b9c078` | Etapa 4 — Página `/estetica` | ✅ pushed |
+| `fd7a3ab` | Doc — `PROJECT_CONTEXT.md` reflete etapas 3 e 4 | ✅ pushed |
+| `bed649f` | Etapa 6 — `/` vira hub neutro e personal migra pra `/personal` | 🟡 local (não pushed) |
 
 ### Próximo passo concreto
 
-As 3 páginas estão no ar (em build local), commitadas separadamente e prontas. **Branch `main` está 6 commits à frente de `origin/main` — não foi feito push** (esperar o usuário pedir).
+As **4 páginas** estão no ar (em build local), commitadas e prontas. **Branch `main` está 1 commit à frente de `origin/main`** — esperar o usuário pedir `git push`.
 
-O que falta — **dependente de ativos do usuário, não de código**:
+#### Arquivos do usuário criados entre sessões (não commitar sem perguntar)
 
-1. **Foto da seção Sobre** — substituir o bloco de placeholder em `components/sections/Sobre.tsx` por `<Image src="/sobre.jpg" ... />` quando a foto chegar.
+- `scripts/generate-logos.mjs` — script criado pelo usuário entre as sessões. Está untracked, não foi incluído em nenhum commit do agente. Pertence ao usuário (perguntar antes de tocar).
+
+#### O que falta — dependente de ativos do usuário, não de código
+
+1. **Foto da seção Sobre** — substituir o placeholder em `components/sections/Sobre.tsx` por `<Image src="/sobre.jpg" ... />` quando a foto chegar.
 2. **Links reais do Portfolio** — quando os 6 demos forem ao ar (2 por nicho), trocar `href: null` em `lib/content/<nicho>.ts → portfolio.demos[i].href` pela URL real.
 3. **`apple-icon.png`** (opcional) — gerar a partir de `app/icon.svg` se quiser cobrir iOS antigo (Next 16 não aceita SVG pra apple-icon — testado).
 4. **`public/favicon.png`** (671KB, não referenciado) — pode deletar manualmente.
-5. **`git push`** quando o usuário aprovar mandar pro `origin/main`.
+5. **`git push`** quando o usuário aprovar mandar `bed649f` pro `origin/main`.
+
+#### ⚠ Impacto SEO da migração `/` → `/personal`
+
+- A `/` deixou de ser a landing densa de personal. O conteúdo continua existindo em `/personal` (mesma copy, mesma estrutura). Google vai reindexar em 2–4 semanas — palavras-chave como "personal trainer Niterói" passam a ranquear `/personal` em vez de `/`.
+- **Não foi configurado redirect 301** porque `/` continua existindo (com conteúdo de hub). Se o ranking despencar e demorar pra recuperar, considerar avisar o Google via Search Console que `/personal` é a nova URL canônica do conteúdo.
 
 ---
 
