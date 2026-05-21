@@ -231,7 +231,7 @@ export const advogadosContent: NicheContent = {
     crossSell: {
       label: "Também atendemos",
       links: [
-        { label: "Personal trainers e studios em Niterói", href: "/" },
+        { label: "Personal trainers e studios em Niterói", href: "/personal" },
         { label: "Clínicas de estética em Niterói", href: "/estetica" },
       ],
     },

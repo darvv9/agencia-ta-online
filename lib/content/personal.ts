@@ -3,7 +3,7 @@ import type { NicheContent } from "./types";
 export const personalContent: NicheContent = {
   niche: "personal",
   schemaKind: "LocalBusiness",
-  path: "/",
+  path: "/personal",
 
   seo: {
     title: "Tá Online — Sites para Personal Trainers e Studios em Niterói",

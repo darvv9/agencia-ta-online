@@ -231,7 +231,7 @@ export const esteticaContent: NicheContent = {
     crossSell: {
       label: "Também atendemos",
       links: [
-        { label: "Personal trainers e studios em Niterói", href: "/" },
+        { label: "Personal trainers e studios em Niterói", href: "/personal" },
         { label: "Advogados em Niterói", href: "/advogados" },
       ],
     },
