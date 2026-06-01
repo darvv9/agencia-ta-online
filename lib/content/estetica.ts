@@ -6,29 +6,30 @@ export const esteticaContent: NicheContent = {
   path: "/estetica",
 
   seo: {
-    title: "Tá Online — Sites para Clínicas de Estética em Niterói",
+    title: "Tá Online — Presença digital para clínicas de estética em Niterói",
     description:
-      "Sites profissionais para clínicas de estética e esteticistas em Niterói. Mais presença no Google local e agendamento direto pelo WhatsApp. Cuidamos de domínio, hospedagem, suporte e alterações.",
+      "Agência de presença digital local em Niterói. Cuidamos de site, Google Meu Negócio, WhatsApp e SEO local pra clínicas de estética serem encontradas e receberem mais agendamentos.",
     keywords: [
+      "agência de presença digital Niterói",
+      "presença digital clínica de estética Niterói",
       "site para clínica de estética Niterói",
-      "site para esteticista Niterói",
+      "Google Meu Negócio estética Niterói",
       "clínica de estética Icaraí",
       "estética avançada Niterói",
-      "criação de sites para clínicas de estética",
     ],
     ogImageAlt:
-      "Site profissional para clínicas de estética em Niterói",
+      "Presença digital completa para clínicas de estética em Niterói",
   },
 
   hero: {
-    eyebrow: "Para clínicas de estética em Niterói",
+    eyebrow: "Presença digital para estética em Niterói",
     h1Lines: [
-      "Sites profissionais",
-      "para clínicas de estética",
-      "em Niterói.",
+      "Sua presença digital",
+      "completa em Niterói.",
+      "Seja encontrada e receba mais agendamentos.",
     ],
     subhead:
-      "Apareça no Google quando alguém busca estética na sua região e receba o contato direto no WhatsApp. Cuidamos do site inteiro — você foca no atendimento.",
+      "Não é só um site. Cuidamos de tudo que faz a sua clínica ser encontrada no Google e receber agendamentos pelo WhatsApp — site, Google Meu Negócio, WhatsApp e acompanhamento. Tudo por nossa conta.",
     primaryCtaLabel: "Quero meu site",
     primaryCtaMessage:
       "Olá! Quero um site para a minha clínica de estética.",
@@ -58,34 +59,44 @@ export const esteticaContent: NicheContent = {
   },
 
   solucao: {
-    title: "O que está incluso no seu site",
+    title: "Tudo que está incluso",
     intro:
-      "Estrutura pensada para clínicas de estética: visual cuidado, fácil de manter e otimizada para o público local.",
+      "Não é um site solto. É um pacote de presença digital pensado pra clínicas de estética serem encontradas e receberem mais agendamentos.",
     items: [
       {
-        title: "Identidade visual leve e profissional",
+        title: "Site profissional",
         description:
-          "Paleta discreta, tipografia limpa e espaçamento generoso. O visual comunica cuidado desde o primeiro acesso, alinhado ao padrão estético da sua clínica.",
+          "Cinco a sete páginas feitas do zero pra sua clínica, adaptadas pro celular — onde a maioria das suas clientes vai te encontrar.",
       },
       {
-        title: "Otimização para buscas locais",
+        title: "Google Meu Negócio otimizado e gerenciado",
         description:
-          "Trabalhamos termos como “estética em Icaraí”, “limpeza de pele em São Francisco” e o nome da clínica associado aos procedimentos. Quem mora perto encontra você primeiro.",
+          "Você aparece no Maps e nas buscas de quem procura estética perto de você. Configuramos e cuidamos do perfil pra você.",
       },
       {
-        title: "WhatsApp como canal de agendamento",
+        title: "WhatsApp Business configurado",
         description:
-          "Botões de contato em todas as seções, com mensagem pré-preenchida pelo procedimento de interesse. A cliente cai direto na sua conversa.",
+          "Respostas automáticas e contatos organizados, pra nenhuma cliente ficar sem retorno.",
       },
       {
-        title: "Domínio, hospedagem e manutenção por nossa conta",
+        title: "Agendamento e contato pelo site",
         description:
-          "O site permanece online, atualizado e seguro. A clínica não precisa configurar nada nem lidar com parte técnica.",
+          "Botões de WhatsApp em todas as seções, com mensagem pronta pelo procedimento de interesse. Um toque e a cliente cai direto na sua conversa.",
       },
       {
-        title: "Alterações ilimitadas inclusas",
+        title: "Otimização para buscas locais (SEO)",
         description:
-          "Preço atualizado, foto nova, procedimento adicionado ao menu? Você solicita por WhatsApp e nós atualizamos. Sem custo adicional.",
+          "Trabalhamos termos como “estética em Icaraí” e “limpeza de pele em São Francisco” pra você aparecer antes do concorrente.",
+      },
+      {
+        title: "Acompanhamento mensal de performance",
+        description:
+          "Todo mês você recebe um relatório do que está funcionando: buscas, contatos e o que dá pra melhorar.",
+      },
+      {
+        title: "Hospedagem, domínio e alterações ilimitadas",
+        description:
+          "Tudo incluso na mensalidade. Preço atualizado, foto nova, procedimento adicionado? Você solicita por WhatsApp e nós atualizamos, sem custo extra.",
       },
     ],
   },
@@ -140,17 +151,17 @@ export const esteticaContent: NicheContent = {
   investimento: {
     title: "Investimento",
     intro:
-      "Sem letra miúda. O setup é o trabalho de criação do site. A mensalidade é o que mantém ele funcionando, atualizado e suportado.",
+      "O valor não é só o site — é toda a presença digital da clínica cuidada por nós. O setup monta tudo; a mensalidade mantém funcionando, atualizado e acompanhado.",
     setup: {
-      label: "Setup do site",
+      label: "Setup do pacote",
       tag: "Pagamento único",
       price: "R$ 1.997",
       installments: "ou 3x de R$ 697 sem juros no cartão",
       bullets: [
-        "Design exclusivo, alinhado ao padrão estético da clínica",
+        "Site profissional de 5 a 7 páginas, criado do zero",
+        "Google Meu Negócio otimizado e WhatsApp Business configurado",
+        "Otimização para buscas locais (SEO)",
         "Textos prontos para sua revisão e aprovação",
-        "Google Meu Negócio configurado",
-        "WhatsApp integrado em todos os pontos de contato",
         "Entrega em 7 a 10 dias úteis",
       ],
     },
@@ -160,10 +171,10 @@ export const esteticaContent: NicheContent = {
       price: "R$ 147",
       period: "/mês",
       bullets: [
-        "Domínio e hospedagem inclusos",
-        "Suporte direto, sem intermediário",
-        "Alterações ilimitadas ao longo do mês",
-        "Backup e monitoramento contínuos",
+        "Hospedagem e domínio inclusos",
+        "Gestão do Google Meu Negócio",
+        "Acompanhamento mensal de performance",
+        "Alterações ilimitadas e suporte direto",
         "Sem fidelidade — cancelamento a qualquer momento",
       ],
     },
@@ -171,15 +182,15 @@ export const esteticaContent: NicheContent = {
     ctaMessage:
       "Olá! Quero saber mais sobre o site para a minha clínica de estética.",
     footnote:
-      "A mensalidade não é custo extra. É o que mantém o seu site online, atualizado e funcionando sem que a clínica precise dedicar tempo a parte técnica.",
+      "Você não paga só por um site. Paga pra ter toda a presença digital cuidada por nós — Google, WhatsApp, site e acompanhamento — sem dor de cabeça com parte técnica.",
   },
 
   sobre: {
     title: "Quem cuida do seu projeto",
     paragraphs: [
-      "Somos uma agência pequena de Niterói. O atendimento é direto, sem intermediário e sem call center: você fala com quem desenvolve o seu site.",
-      "Atendemos clínicas de estética e profissionais da região porque entendemos a rotina — agenda cheia, foco no atendimento, pouco tempo para tarefas técnicas. A proposta é exatamente essa: você não precisa pensar em site.",
-      "Comunicação objetiva, resposta rápida e foco em transmitir o cuidado que a clínica entrega no dia a dia.",
+      "A Tá Online cuida da presença digital de profissionais e negócios locais de Niterói e região. Não entregamos só um site — cuidamos de tudo que faz a clínica ser encontrada e receber mais agendamentos: Google, WhatsApp, site e acompanhamento.",
+      "Atendimento próximo: você fala direto com quem cuida do seu projeto, sem intermediário e sem call center.",
+      "Atendemos clínicas de estética e profissionais da região porque entendemos a rotina — agenda cheia, foco no atendimento, pouco tempo pra parte técnica. Comunicação objetiva e resposta rápida.",
     ],
   },
 
