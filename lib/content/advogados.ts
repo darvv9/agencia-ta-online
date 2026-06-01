@@ -6,29 +6,31 @@ export const advogadosContent: NicheContent = {
   path: "/advogados",
 
   seo: {
-    title: "Tá Online — Sites para Advogados e Escritórios em Niterói",
+    title:
+      "Tá Online — Presença digital para advogados e escritórios em Niterói",
     description:
-      "Sites institucionais para advogados e escritórios de advocacia em Niterói. Presença digital sóbria, dentro das normas da OAB, com toda parte técnica cuidada por nós.",
+      "Agência de presença digital local em Niterói. Cuidamos de site institucional, Google Meu Negócio, WhatsApp e SEO local para advogados e escritórios, sempre dentro das normas da OAB.",
     keywords: [
+      "agência de presença digital Niterói",
+      "presença digital advogado Niterói",
       "site para advogado Niterói",
       "site para escritório de advocacia Niterói",
       "site institucional advogado",
-      "site advogado Icaraí",
-      "criação de sites para advogados",
+      "advogado Icaraí",
     ],
     ogImageAlt:
-      "Site institucional para advogados e escritórios em Niterói",
+      "Presença digital institucional para advogados e escritórios em Niterói",
   },
 
   hero: {
-    eyebrow: "Para a advocacia em Niterói",
+    eyebrow: "Presença digital para a advocacia em Niterói",
     h1Lines: [
-      "Sites institucionais",
-      "para advogados",
+      "Toda a presença digital",
+      "do seu escritório",
       "em Niterói.",
     ],
     subhead:
-      "Presença digital que comunica a seriedade do seu escritório. Cuidamos da parte técnica — você dedica tempo ao que importa: o seu cliente.",
+      "Não é só um site. Cuidamos de tudo que faz o escritório ser encontrado no Google e transmitir credibilidade — site institucional, Google Meu Negócio, WhatsApp e acompanhamento. Sempre dentro das normas da OAB.",
     primaryCtaLabel: "Quero meu site",
     primaryCtaMessage:
       "Olá! Gostaria de saber mais sobre o site para o meu escritório de advocacia.",
@@ -58,34 +60,44 @@ export const advogadosContent: NicheContent = {
   },
 
   solucao: {
-    title: "O que está incluso no seu site",
+    title: "Tudo que está incluso",
     intro:
-      "Estrutura institucional pensada para o exercício da advocacia: informativa, sóbria e alinhada às normas da OAB.",
+      "Não é um site solto. É um pacote de presença digital pensado para a advocacia: institucional, sóbrio e alinhado às normas da OAB.",
     items: [
       {
-        title: "Identidade visual sóbria e profissional",
+        title: "Site institucional",
         description:
-          "Tipografia serifada, espaçamento generoso e paleta discreta. O visual comunica seriedade desde o primeiro acesso, sem apelo comercial.",
+          "Cinco a sete páginas feitas do zero, com estrutura sóbria e adaptadas pro celular — onde boa parte dos seus clientes vai te encontrar.",
       },
       {
-        title: "Otimização para buscas locais",
+        title: "Google Meu Negócio otimizado e gerenciado",
         description:
-          "Trabalhamos termos como “advogado em Niterói” e o nome do escritório associado a áreas de atuação. Quem busca por você encontra com facilidade.",
+          "O escritório aparece no Maps e nas buscas de quem procura um advogado na região. Configuramos e cuidamos do perfil.",
       },
       {
-        title: "WhatsApp como canal de atendimento",
+        title: "WhatsApp Business configurado",
         description:
-          "Botão de contato em todas as seções, com mensagem pré-preenchida. O potencial cliente fala diretamente com o escritório, sem formulário longo.",
+          "Respostas automáticas e contatos organizados, para nenhum cliente ficar sem retorno.",
       },
       {
-        title: "Domínio, hospedagem e manutenção por nossa conta",
+        title: "Contato pelo site via WhatsApp",
         description:
-          "O site permanece online, atualizado e seguro. O escritório não precisa configurar nada nem lidar com fornecedores técnicos.",
+          "Botão de contato em todas as seções, com mensagem pré-preenchida. O cliente fala diretamente com o escritório, sem formulário longo.",
       },
       {
-        title: "Alterações ilimitadas inclusas",
+        title: "Otimização para buscas locais (SEO)",
         description:
-          "Mudança de endereço, novo advogado associado, atualização de áreas de atuação? Você solicita por WhatsApp e nós atualizamos.",
+          "Trabalhamos termos como “advogado em Niterói” e o nome do escritório associado às áreas de atuação, dentro das normas da OAB.",
+      },
+      {
+        title: "Acompanhamento mensal de performance",
+        description:
+          "Todo mês você recebe um relatório do que está funcionando: buscas, contatos e o que dá para melhorar.",
+      },
+      {
+        title: "Hospedagem, domínio e alterações ilimitadas",
+        description:
+          "Tudo incluso na mensalidade. Mudança de endereço, novo associado, atualização de áreas de atuação? Você solicita por WhatsApp e nós atualizamos.",
       },
     ],
   },
@@ -140,17 +152,17 @@ export const advogadosContent: NicheContent = {
   investimento: {
     title: "Investimento",
     intro:
-      "Sem letra miúda. O setup é o trabalho de criação do site. A mensalidade mantém ele funcionando, atualizado e suportado.",
+      "O valor não é só o site — é toda a presença digital do escritório cuidada por nós. O setup monta tudo; a mensalidade mantém funcionando, atualizado e acompanhado.",
     setup: {
-      label: "Setup do site",
+      label: "Setup do pacote",
       tag: "Pagamento único",
       price: "R$ 2.497",
       installments: "ou 3x de R$ 867 sem juros no cartão",
       bullets: [
-        "Identidade visual exclusiva, alinhada ao tom da advocacia",
-        "Textos prontos para sua revisão e aprovação",
-        "Google Meu Negócio configurado",
-        "WhatsApp integrado em todos os pontos de contato",
+        "Site institucional de 5 a 7 páginas, criado do zero",
+        "Estrutura sóbria, alinhada às normas da OAB",
+        "Google Meu Negócio otimizado e WhatsApp Business configurado",
+        "Otimização para buscas locais (SEO)",
         "Entrega em 7 a 10 dias úteis",
       ],
     },
@@ -160,10 +172,10 @@ export const advogadosContent: NicheContent = {
       price: "R$ 197",
       period: "/mês",
       bullets: [
-        "Domínio e hospedagem inclusos",
-        "Suporte direto, sem intermediário",
-        "Alterações ilimitadas ao longo do mês",
-        "Backup e monitoramento contínuos",
+        "Hospedagem e domínio inclusos",
+        "Gestão do Google Meu Negócio",
+        "Acompanhamento mensal de performance",
+        "Alterações ilimitadas e suporte direto",
         "Sem fidelidade — cancelamento a qualquer momento",
       ],
     },
@@ -171,15 +183,15 @@ export const advogadosContent: NicheContent = {
     ctaMessage:
       "Olá! Quero saber mais sobre o site para o meu escritório de advocacia.",
     footnote:
-      "A mensalidade não é um custo extra. É o que mantém o seu site online, atualizado e funcionando sem que o escritório precise dedicar tempo a parte técnica.",
+      "Você não paga só por um site. Paga pra ter toda a presença digital do escritório cuidada por nós — Google, WhatsApp, site e acompanhamento — sem dedicar tempo a parte técnica.",
   },
 
   sobre: {
     title: "Quem cuida do seu projeto",
     paragraphs: [
-      "Somos uma agência pequena de Niterói. O atendimento é direto, sem intermediário e sem call center: você fala com quem desenvolve o seu site.",
-      "Atendemos advogados solo e escritórios pequenos da região porque entendemos a realidade — agenda comprometida, foco em casos e clientes, pouco tempo para questões técnicas. A proposta é exatamente essa: você não precisa pensar em site.",
-      "Comunicação objetiva, resposta rápida e foco em transmitir a reputação do escritório.",
+      "A Tá Online cuida da presença digital de profissionais e negócios locais de Niterói e região. Para a advocacia, isso é cuidar de tudo que faz o escritório ser encontrado e transmitir credibilidade: site institucional, Google, WhatsApp e acompanhamento — sempre dentro das normas da OAB.",
+      "Atendimento próximo: você fala direto com quem cuida do seu projeto, sem intermediário e sem call center.",
+      "Atendemos advogados solo e escritórios pequenos da região porque entendemos a realidade — agenda comprometida, foco em casos e clientes, pouco tempo para questões técnicas. Comunicação objetiva e resposta rápida.",
     ],
   },
 
