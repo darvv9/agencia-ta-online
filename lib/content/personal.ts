@@ -6,29 +6,31 @@ export const personalContent: NicheContent = {
   path: "/personal",
 
   seo: {
-    title: "Tá Online — Sites para Personal Trainers e Studios em Niterói",
+    title:
+      "Tá Online — Presença digital para personal trainers e studios em Niterói",
     description:
-      "Sites profissionais para personal trainers e studios de Niterói. Cuidamos de domínio, hospedagem, suporte e alterações. Maior presença no Google local.",
+      "Agência de presença digital local em Niterói. Cuidamos de site, Google Meu Negócio, WhatsApp e SEO local pra personal trainers e studios serem achados e fecharem mais alunos.",
     keywords: [
+      "agência de presença digital Niterói",
+      "presença digital personal trainer Niterói",
       "site para personal trainer Niterói",
-      "site para studio de pilates Niterói",
+      "Google Meu Negócio personal trainer Niterói",
       "personal trainer Icaraí",
       "studio funcional Niterói",
-      "criação de sites para personal trainer",
     ],
     ogImageAlt:
-      "Site profissional para personal trainers e studios em Niterói",
+      "Presença digital completa para personal trainers e studios em Niterói",
   },
 
   hero: {
-    eyebrow: "Agência em Niterói",
+    eyebrow: "Presença digital em Niterói",
     h1Lines: [
-      "Sites profissionais para",
-      "personal trainers e studios",
-      "em Niterói.",
+      "Sua presença digital",
+      "completa em Niterói.",
+      "Seja achado e feche mais alunos.",
     ],
     subhead:
-      "Apareça no Google quando alguém busca personal ou pilates na sua região. Cuidamos do site inteiro — você foca no atendimento.",
+      "Não é só um site. Cuidamos de tudo que faz você ser encontrado no Google e fechar mais alunos — site, Google Meu Negócio, WhatsApp e acompanhamento. Tudo por nossa conta.",
     primaryCtaLabel: "Quero meu site",
     primaryCtaMessage:
       "Olá! Quero um site para o meu trabalho como personal/studio.",
@@ -58,34 +60,44 @@ export const personalContent: NicheContent = {
   },
 
   solucao: {
-    title: "O que está incluso no seu site",
+    title: "Tudo que está incluso",
     intro:
-      "Cada projeto é pensado para personal trainers e studios: direto ao ponto, fácil de manter e otimizado para o público local.",
+      "Não é um site solto. É um pacote de presença digital pensado pra personal trainers e studios serem achados e fecharem mais alunos.",
     items: [
       {
-        title: "Otimizado para celular",
+        title: "Site profissional",
         description:
-          "A maioria dos seus alunos chega pelo celular. O site carrega rápido, mantém a hierarquia das informações e estimula o agendamento.",
+          "Cinco a sete páginas feitas do zero pro seu trabalho, adaptadas pro celular — onde a maioria dos seus alunos vai te encontrar.",
       },
       {
-        title: "Otimização para buscas locais",
+        title: "Google Meu Negócio otimizado e gerenciado",
         description:
-          "Trabalhamos termos como “personal em Icaraí” e “pilates em São Francisco”. Quem mora perto encontra o seu nome antes do concorrente.",
+          "Você aparece no Maps e nas buscas de quem procura personal perto de você. Configuramos e cuidamos do perfil pra você.",
       },
       {
-        title: "WhatsApp integrado",
+        title: "WhatsApp Business configurado",
         description:
-          "Botões de contato em todas as seções, com mensagem pré-preenchida. Um toque e o aluno cai direto na sua conversa.",
+          "Respostas automáticas e contatos organizados, pra nenhum aluno ficar sem retorno.",
       },
       {
-        title: "Domínio, hospedagem e atualizações por nossa conta",
+        title: "Agendamento e contato pelo site",
         description:
-          "O site permanece online, atualizado e seguro. Você não precisa configurar nada nem lidar com parte técnica.",
+          "Botões de WhatsApp em todas as seções, com mensagem pronta. Um toque e o aluno cai direto na sua conversa.",
       },
       {
-        title: "Alterações ilimitadas inclusas",
+        title: "Otimização para buscas locais (SEO)",
         description:
-          "Mudou de horário, atualizou o preço, recebeu fotos novas? Você solicita por WhatsApp e nós atualizamos. Sem custo adicional.",
+          "Trabalhamos termos como “personal em Icaraí” e “pilates em São Francisco” pra você aparecer antes do concorrente.",
+      },
+      {
+        title: "Acompanhamento mensal de performance",
+        description:
+          "Todo mês você recebe um relatório do que está funcionando: buscas, contatos e o que dá pra melhorar.",
+      },
+      {
+        title: "Hospedagem, domínio e alterações ilimitadas",
+        description:
+          "Tudo incluso na mensalidade. Mudou de horário ou preço? Você solicita por WhatsApp e nós atualizamos, sem custo extra.",
       },
     ],
   },
@@ -140,17 +152,17 @@ export const personalContent: NicheContent = {
   investimento: {
     title: "Investimento",
     intro:
-      "Sem letra miúda. O setup é o trabalho de criação do site. A mensalidade é o que mantém ele funcionando, atualizado e suportado.",
+      "O valor não é só o site — é toda a sua presença digital cuidada por nós. O setup monta tudo; a mensalidade mantém funcionando, atualizado e acompanhado.",
     setup: {
-      label: "Setup do site",
+      label: "Setup do pacote",
       tag: "Pagamento único",
       price: "R$ 1.997",
       installments: "ou 3x de R$ 697 sem juros no cartão",
       bullets: [
-        "Design exclusivo, criado para o seu trabalho",
+        "Site profissional de 5 a 7 páginas, criado do zero",
+        "Google Meu Negócio otimizado e WhatsApp Business configurado",
+        "Otimização para buscas locais (SEO)",
         "Textos prontos para sua revisão e aprovação",
-        "Google Meu Negócio configurado",
-        "WhatsApp integrado em todos os pontos de contato",
         "Entrega em 7 a 10 dias úteis",
       ],
     },
@@ -160,10 +172,10 @@ export const personalContent: NicheContent = {
       price: "R$ 147",
       period: "/mês",
       bullets: [
-        "Domínio e hospedagem inclusos",
-        "Suporte direto, sem intermediário",
-        "Alterações ilimitadas ao longo do mês",
-        "Backup e monitoramento contínuos",
+        "Hospedagem e domínio inclusos",
+        "Gestão do Google Meu Negócio",
+        "Acompanhamento mensal de performance",
+        "Alterações ilimitadas e suporte direto",
         "Sem fidelidade — cancelamento a qualquer momento",
       ],
     },
@@ -171,15 +183,15 @@ export const personalContent: NicheContent = {
     ctaMessage:
       "Olá! Quero saber mais sobre o site para o meu trabalho como personal/studio.",
     footnote:
-      "A mensalidade não é custo extra. É o que mantém o seu site online, atualizado e funcionando sem que você precise pensar em parte técnica.",
+      "Você não paga só por um site. Paga pra ter toda a presença digital cuidada por nós — Google, WhatsApp, site e acompanhamento — sem dor de cabeça com parte técnica.",
   },
 
   sobre: {
     title: "Quem cuida do seu projeto",
     paragraphs: [
-      "Somos uma agência pequena de Niterói. O atendimento é direto, sem intermediário e sem call center: você fala com quem desenvolve o seu site.",
-      "Atendemos principalmente personal trainers e studios da região porque entendemos a rotina — agenda cheia, pouco tempo para tarefas técnicas. A proposta é exatamente essa: você não precisa pensar em site.",
-      "Comunicação objetiva, resposta rápida e foco no que gera resultado.",
+      "A Tá Online cuida da presença digital de profissionais e negócios locais de Niterói e região. Não entregamos só um site — cuidamos de tudo que faz você ser encontrado e fechar mais clientes: Google, WhatsApp, site e acompanhamento.",
+      "Atendimento próximo: você fala direto com quem cuida do seu projeto, sem intermediário e sem call center.",
+      "Atendemos personal trainers e studios da região porque entendemos a rotina — agenda cheia, pouco tempo pra parte técnica. Comunicação objetiva e resposta rápida.",
     ],
   },
 

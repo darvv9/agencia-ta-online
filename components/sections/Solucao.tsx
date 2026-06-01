@@ -7,13 +7,17 @@ type Props = { content: NicheContent };
 const ICONS = [
   // Site
   "M4 5h16v12H4z M4 9h16",
-  // Google
+  // Google / busca local
   "M12 4v4 M12 4a8 8 0 100 16 8 8 0 008-8h-8",
   // WhatsApp
   "M3 12a9 9 0 1 1 4 7.5L3 21l1.6-3.8A9 9 0 0 1 3 12z",
-  // Setas/automation
-  "M4 7h13l-3-3 M20 17H7l3 3",
-  // Coração / care
+  // Agendamento / calendário
+  "M4 7h16v13H4z M4 11h16 M8 4v4 M16 4v4",
+  // SEO / busca (lupa)
+  "M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14z M20 21l-4.35-4.35",
+  // Acompanhamento / relatório (gráfico)
+  "M5 20V10 M12 20V4 M19 20v-6 M4 20h16",
+  // Cuidado / hospedagem (coração)
   "M12 21s-7-4.5-7-10a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 5.5-7 10-7 10z",
 ];
 
