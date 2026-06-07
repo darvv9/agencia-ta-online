@@ -8,57 +8,56 @@ import { SITE } from "@/lib/site";
 import { whatsappUrl } from "@/lib/whatsapp";
 
 export const metadata: Metadata = {
-  title: "Tá Online — Sites para pequenos negócios em Niterói",
+  title: "Tá Online — Presença digital para personal trainers em todo o Brasil",
   description:
-    "Agência de Niterói especializada em sites para três nichos: personal trainers e studios, advogados e clínicas de estética. Setup único + mensalidade com tudo cuidado por nós.",
+    "Especialistas em presença digital para personal trainers. Site profissional, integrado ao WhatsApp e otimizado para o Google, para você ser encontrado e fechar mais alunos em qualquer cidade do Brasil.",
   keywords: [
-    "agência de sites Niterói",
-    "criação de sites Niterói",
-    "sites para pequenos negócios Niterói",
+    "presença digital para personal trainer",
+    "site para personal trainer",
+    "site para personal trainer Brasil",
+    "criação de site para personal trainer",
     "agência Tá Online",
   ],
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Tá Online — Sites para pequenos negócios em Niterói",
+    title:
+      "Tá Online — Presença digital para personal trainers em todo o Brasil",
     description:
-      "Sites profissionais para personal trainers, advogados e clínicas de estética em Niterói. Setup único + mensalidade com tudo cuidado.",
+      "Site profissional, integrado ao WhatsApp e otimizado para o Google. Para personal trainers de qualquer cidade do Brasil — tudo cuidado por nós.",
     url: "/",
     type: "website",
     locale: "pt_BR",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tá Online — Sites para pequenos negócios em Niterói",
+    title:
+      "Tá Online — Presença digital para personal trainers em todo o Brasil",
     description:
-      "Sites profissionais para personal trainers, advogados e clínicas de estética em Niterói.",
+      "Site profissional, integrado ao WhatsApp e otimizado para o Google. Para personal trainers de qualquer cidade do Brasil.",
   },
 };
 
-type NicheLink = {
-  href: string;
+type Pillar = {
   title: string;
   subtitle: string;
   dotColor: string;
 };
 
-const niches: NicheLink[] = [
+const pillars: Pillar[] = [
   {
-    href: "/personal",
-    title: "Personal trainers e studios",
-    subtitle: "Niterói e região",
+    title: "Site profissional",
+    subtitle: "Pronto para o celular e feito do zero para o seu trabalho.",
     dotColor: "#3a5246",
   },
   {
-    href: "/advogados",
-    title: "Advogados e escritórios",
-    subtitle: "Atuação em Niterói",
-    dotColor: "#14304f",
+    title: "Integração com WhatsApp",
+    subtitle: "Botão e formulário que levam o aluno direto para a sua conversa.",
+    dotColor: "#c9a87c",
   },
   {
-    href: "/estetica",
-    title: "Clínicas de estética",
-    subtitle: "Niterói e região",
-    dotColor: "#6d3d3d",
+    title: "Apareça no Google",
+    subtitle: "Otimização para quem procura um personal na sua cidade.",
+    dotColor: "#3a5246",
   },
 ];
 
@@ -70,18 +69,8 @@ const hubSchema = {
   email: SITE.email,
   telephone: SITE.whatsapp.international,
   description:
-    "Agência de Niterói especializada em sites para personal trainers e studios, advogados e clínicas de estética.",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: SITE.address.streetAddress,
-    addressLocality: SITE.address.locality,
-    addressRegion: SITE.address.region,
-    addressCountry: SITE.address.country,
-  },
-  areaServed: SITE.areaServed.map((city) => ({
-    "@type": "City",
-    name: city,
-  })),
+    "Tá Online é especialista em presença digital para personal trainers — site profissional, integrado ao WhatsApp e otimizado para o Google, em todo o Brasil.",
+  areaServed: [{ "@type": "Country", name: "Brasil" }],
   sameAs: [],
 };
 
@@ -100,51 +89,64 @@ export default function HubPage() {
         <Container size="default">
           <div className="text-center">
             <Logo size="xl" />
-            <h1 className="font-display mt-10 text-3xl tracking-tight sm:text-4xl md:text-5xl">
-              Sites para pequenos negócios em Niterói.
+            <p className="font-display text-fg-subtle mt-8 text-xs tracking-[0.25em] uppercase">
+              Especialistas em personal trainer
+            </p>
+            <h1 className="font-display mt-4 text-3xl tracking-tight sm:text-4xl md:text-5xl">
+              Presença digital para personal trainers em todo o Brasil.
             </h1>
             <p className="text-fg-muted mx-auto mt-5 max-w-2xl text-base sm:text-lg">
-              Trabalhamos com três tipos de cliente. Escolha o que combina com o
-              seu trabalho.
+              Site profissional, integrado ao WhatsApp e otimizado para o
+              Google — para você ser encontrado e fechar mais alunos. Você foca
+              no treino; nós cuidamos da sua presença online.
             </p>
+            <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
+              <Link
+                href="/personal"
+                className="bg-primary text-primary-fg inline-flex items-center justify-center gap-1.5 rounded-full px-7 py-3.5 text-sm font-medium transition-transform hover:-translate-y-0.5"
+              >
+                Ver como funciona
+                <svg
+                  className="h-4 w-4"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={1.6}
+                  aria-hidden
+                >
+                  <path
+                    d="M4 10h12M11 5l5 5-5 5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </Link>
+              <a
+                href={waHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-line text-fg hover:border-primary/40 inline-flex items-center justify-center rounded-full border px-7 py-3.5 text-sm font-medium transition-colors"
+              >
+                Falar no WhatsApp
+              </a>
+            </div>
           </div>
 
           <ul className="mt-14 grid gap-4 sm:mt-16 md:grid-cols-3">
-            {niches.map((n) => (
-              <li key={n.href}>
-                <Link
-                  href={n.href}
-                  className="group bg-card border-line hover:border-primary/40 flex h-full flex-col justify-between rounded-2xl border p-6 transition-all hover:-translate-y-0.5 hover:shadow-md sm:p-7"
-                >
-                  <div>
-                    <span
-                      aria-hidden
-                      className="mb-4 inline-block h-2.5 w-2.5 rounded-full"
-                      style={{ backgroundColor: n.dotColor }}
-                    />
-                    <h2 className="font-display text-xl tracking-tight sm:text-2xl">
-                      {n.title}
-                    </h2>
-                    <p className="text-fg-muted mt-1.5 text-sm">{n.subtitle}</p>
-                  </div>
-                  <span className="text-primary mt-8 inline-flex items-center gap-1.5 text-sm font-medium transition-transform group-hover:translate-x-0.5">
-                    Ver detalhes
-                    <svg
-                      className="h-4 w-4"
-                      viewBox="0 0 20 20"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth={1.6}
-                      aria-hidden
-                    >
-                      <path
-                        d="M4 10h12M11 5l5 5-5 5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </span>
-                </Link>
+            {pillars.map((p) => (
+              <li
+                key={p.title}
+                className="bg-card border-line flex h-full flex-col rounded-2xl border p-6 sm:p-7"
+              >
+                <span
+                  aria-hidden
+                  className="mb-4 inline-block h-2.5 w-2.5 rounded-full"
+                  style={{ backgroundColor: p.dotColor }}
+                />
+                <h2 className="font-display text-xl tracking-tight sm:text-2xl">
+                  {p.title}
+                </h2>
+                <p className="text-fg-muted mt-1.5 text-sm">{p.subtitle}</p>
               </li>
             ))}
           </ul>
@@ -154,7 +156,7 @@ export default function HubPage() {
       <footer className="border-line border-t py-8">
         <Container>
           <div className="text-fg-subtle flex flex-col items-start gap-3 text-sm sm:flex-row sm:items-center sm:justify-between">
-            <p>© {year} Tá Online — Niterói, RJ</p>
+            <p>© {year} Tá Online</p>
             <div className="flex flex-wrap gap-x-5 gap-y-2">
               <a
                 href={waHref}

@@ -28,21 +28,21 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE.baseUrl),
   title: {
     default:
-      "Tá Online — Sites profissionais para pequenos negócios em Niterói",
+      "Tá Online — Presença digital para personal trainers em todo o Brasil",
     template: "%s",
   },
   description:
-    "Agência de Niterói que cuida do site inteiro pra você: domínio, hospedagem, suporte e alterações. Foco em personal trainers, advogados e clínicas de estética.",
+    "Especialistas em presença digital para personal trainers. Cuidamos do site inteiro — domínio, hospedagem, suporte e alterações — para você ser encontrado e fechar mais alunos em qualquer cidade do Brasil.",
   applicationName: SITE.name,
   authors: [{ name: SITE.name }],
   creator: SITE.name,
   publisher: SITE.name,
   keywords: [
-    "agência de sites Niterói",
-    "site para personal trainer Niterói",
-    "site para advogado Niterói",
-    "site para clínica de estética Niterói",
-    "criação de sites Niterói",
+    "presença digital para personal trainer",
+    "site para personal trainer",
+    "site para personal trainer Brasil",
+    "criação de site para personal trainer",
+    "site para studio de pilates",
   ],
   alternates: { canonical: "/" },
   openGraph: {
@@ -50,15 +50,15 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     siteName: SITE.name,
     url: SITE.baseUrl,
-    title: "Tá Online — Sites profissionais em Niterói",
+    title: "Tá Online — Presença digital para personal trainers",
     description:
-      "Site profissional + domínio + hospedagem + suporte + alterações. Tudo cuidado por nós, em Niterói.",
+      "Site profissional, integrado ao WhatsApp e otimizado para o Google. Para personal trainers de qualquer cidade do Brasil — tudo cuidado por nós.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tá Online — Sites profissionais em Niterói",
+    title: "Tá Online — Presença digital para personal trainers",
     description:
-      "Site profissional pra pequenos negócios em Niterói. Tudo cuidado por nós.",
+      "Site profissional, integrado ao WhatsApp e otimizado para o Google. Para personal trainers de qualquer cidade do Brasil.",
   },
   robots: {
     index: true,
