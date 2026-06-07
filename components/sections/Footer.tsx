@@ -19,13 +19,12 @@ export function Footer({ content }: Props) {
           <div>
             <Logo size="lg" />
             <p className="text-fg-muted mt-4 max-w-sm text-sm leading-relaxed">
-              Agência de Niterói especializada em sites profissionais para
-              pequenos negócios da região. Cuidamos de todo o ambiente
-              técnico — domínio, hospedagem, suporte e alterações.
+              Especialistas em presença digital para personal trainers.
+              Cuidamos de todo o ambiente técnico do seu site — domínio,
+              hospedagem, suporte e alterações inclusas.
             </p>
             <p className="text-fg-subtle mt-3 text-sm">
-              Atendemos {SITE.areaServed.slice(0, -1).join(", ")} e{" "}
-              {SITE.areaServed.at(-1)}.
+              Atendemos personal trainers em todo o Brasil.
             </p>
           </div>
 

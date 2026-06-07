@@ -6,41 +6,39 @@ export const personalContent: NicheContent = {
   path: "/personal",
 
   seo: {
-    title:
-      "Tá Online — Presença digital para personal trainers e studios em Niterói",
+    title: "Tá Online — Sites para Personal Trainers em todo o Brasil",
     description:
-      "Agência de presença digital local em Niterói. Cuidamos de site, Google Meu Negócio, WhatsApp e SEO local pra personal trainers e studios serem achados e fecharem mais alunos.",
+      "Especialistas em presença digital para personal trainers. Site profissional, integrado ao WhatsApp e otimizado para o Google, para você ser encontrado e fechar mais alunos em qualquer cidade do Brasil.",
     keywords: [
-      "agência de presença digital Niterói",
-      "presença digital personal trainer Niterói",
-      "site para personal trainer Niterói",
-      "Google Meu Negócio personal trainer Niterói",
-      "personal trainer Icaraí",
-      "studio funcional Niterói",
+      "site para personal trainer",
+      "site para personal trainer Brasil",
+      "presença digital para personal trainer",
+      "criação de site para personal trainer",
+      "site para studio de pilates",
     ],
     ogImageAlt:
-      "Presença digital completa para personal trainers e studios em Niterói",
+      "Site profissional para personal trainers — Tá Online",
   },
 
   hero: {
-    eyebrow: "Presença digital em Niterói",
+    eyebrow: "Especialistas em personal trainer",
     h1Lines: [
-      "Sua presença digital",
-      "completa em Niterói.",
-      "Seja achado e feche mais alunos.",
+      "Sites profissionais para",
+      "personal trainers",
+      "em todo o Brasil.",
     ],
     subhead:
-      "Não é só um site. Cuidamos de tudo que faz você ser encontrado no Google e fechar mais alunos — site, Google Meu Negócio, WhatsApp e acompanhamento. Tudo por nossa conta.",
+      "Apareça no Google quando alguém procura um personal na sua cidade e transforme esse contato em conversa no WhatsApp. Cuidamos do site inteiro — você foca no treino.",
     primaryCtaLabel: "Quero meu site",
     primaryCtaMessage:
-      "Olá! Quero um site para o meu trabalho como personal/studio.",
+      "Olá! Quero um site profissional para o meu trabalho como personal trainer.",
     secondaryCtaLabel: "Ver exemplos",
   },
 
   dores: {
     title: "O que afasta um possível aluno antes do primeiro contato",
     intro:
-      "Em conversas com personal trainers e studios da região, três pontos aparecem com mais frequência.",
+      "Conversando com personal trainers de todo o Brasil, três pontos se repetem.",
     items: [
       {
         title:
@@ -60,44 +58,39 @@ export const personalContent: NicheContent = {
   },
 
   solucao: {
-    title: "Tudo que está incluso",
+    title: "O que está incluso no seu site",
     intro:
-      "Não é um site solto. É um pacote de presença digital pensado pra personal trainers e studios serem achados e fecharem mais alunos.",
+      "Cada projeto é pensado para o trabalho de personal trainer: direto ao ponto, fácil de manter e otimizado para quem procura um personal na sua cidade.",
     items: [
       {
-        title: "Site profissional",
+        title: "Site profissional pronto para o celular",
         description:
-          "Cinco a sete páginas feitas do zero pro seu trabalho, adaptadas pro celular — onde a maioria dos seus alunos vai te encontrar.",
+          "A maioria dos seus alunos chega pelo celular. O site carrega rápido, organiza as informações e estimula o contato.",
       },
       {
-        title: "Google Meu Negócio otimizado e gerenciado",
+        title: "Integração com WhatsApp no site",
         description:
-          "Você aparece no Maps e nas buscas de quem procura personal perto de você. Configuramos e cuidamos do perfil pra você.",
+          "Botão direto, botão flutuante e formulário que levam para a sua conversa no WhatsApp. O aluno fala com você em um toque, sem formulário longo.",
       },
       {
-        title: "WhatsApp Business configurado",
+        title: "Otimização para aparecer no Google (SEO)",
         description:
-          "Respostas automáticas e contatos organizados, pra nenhum aluno ficar sem retorno.",
+          "Estruturamos o site para os termos que as pessoas usam ao procurar um personal na sua cidade, para você ser encontrado por quem está perto.",
       },
       {
-        title: "Agendamento e contato pelo site",
+        title: "Estrutura preparada para campanhas",
         description:
-          "Botões de WhatsApp em todas as seções, com mensagem pronta. Um toque e o aluno cai direto na sua conversa.",
+          "O site já vem pronto para receber os pixels do Meta e do Google. Quando quiser anunciar, é só ativar e medir os resultados.",
       },
       {
-        title: "Otimização para buscas locais (SEO)",
+        title: "Guia de boas práticas para WhatsApp Business e Google Meu Negócio",
         description:
-          "Trabalhamos termos como “personal em Icaraí” e “pilates em São Francisco” pra você aparecer antes do concorrente.",
+          "Você recebe um passo a passo para otimizar os seus próprios perfis no WhatsApp Business e no Google Meu Negócio — feito por você, com a nossa orientação.",
       },
       {
-        title: "Acompanhamento mensal de performance",
+        title: "Hospedagem, domínio e alterações inclusos",
         description:
-          "Todo mês você recebe um relatório do que está funcionando: buscas, contatos e o que dá pra melhorar.",
-      },
-      {
-        title: "Hospedagem, domínio e alterações ilimitadas",
-        description:
-          "Tudo incluso na mensalidade. Mudou de horário ou preço? Você solicita por WhatsApp e nós atualizamos, sem custo extra.",
+          "Tudo cuidado na mensalidade. Mudou de horário, atualizou o preço, recebeu fotos novas? Você solicita por WhatsApp e nós atualizamos.",
       },
     ],
   },
@@ -109,13 +102,13 @@ export const personalContent: NicheContent = {
     demos: [
       {
         name: "Studio Movimenta",
-        kind: "Studio de pilates e funcional — Icaraí",
+        kind: "Studio de pilates e funcional",
         bullets: ["Aulas", "Equipe", "Horários"],
         href: null,
       },
       {
         name: "Júlia Costa Personal",
-        kind: "Personal trainer — São Francisco",
+        kind: "Personal trainer",
         bullets: ["Sobre", "Planos", "Avaliação"],
         href: null,
       },
@@ -139,7 +132,7 @@ export const personalContent: NicheContent = {
       {
         title: "Site no ar em 7 a 10 dias",
         description:
-          "Configurado, otimizado para o Google e com WhatsApp funcionando.",
+          "Configurado, otimizado para o Google e com o WhatsApp integrado.",
       },
       {
         title: "Cuidamos de tudo a partir daí",
@@ -152,17 +145,18 @@ export const personalContent: NicheContent = {
   investimento: {
     title: "Investimento",
     intro:
-      "O valor não é só o site — é toda a sua presença digital cuidada por nós. O setup monta tudo; a mensalidade mantém funcionando, atualizado e acompanhado.",
+      "Sem letra miúda. O setup é o trabalho de criação do site. A mensalidade é o que mantém ele funcionando, atualizado e suportado.",
     setup: {
-      label: "Setup do pacote",
+      label: "Setup do site",
       tag: "Pagamento único",
       price: "R$ 1.997",
       installments: "ou 3x de R$ 697 sem juros no cartão",
       bullets: [
-        "Site profissional de 5 a 7 páginas, criado do zero",
-        "Google Meu Negócio otimizado e WhatsApp Business configurado",
-        "Otimização para buscas locais (SEO)",
-        "Textos prontos para sua revisão e aprovação",
+        "Site profissional, criado para o seu trabalho como personal",
+        "Textos prontos para a sua revisão e aprovação",
+        "WhatsApp integrado em todos os pontos de contato",
+        "Estrutura preparada para campanhas (pixels do Meta e do Google)",
+        "Guia de boas práticas para WhatsApp Business e Google Meu Negócio",
         "Entrega em 7 a 10 dias úteis",
       ],
     },
@@ -172,26 +166,26 @@ export const personalContent: NicheContent = {
       price: "R$ 147",
       period: "/mês",
       bullets: [
-        "Hospedagem e domínio inclusos",
-        "Gestão do Google Meu Negócio",
-        "Acompanhamento mensal de performance",
-        "Alterações ilimitadas e suporte direto",
+        "Domínio e hospedagem inclusos",
+        "Suporte direto, sem intermediário",
+        "Alterações ilimitadas ao longo do mês",
+        "Backup e monitoramento contínuos",
         "Sem fidelidade — cancelamento a qualquer momento",
       ],
     },
     ctaLabel: "Quero meu site",
     ctaMessage:
-      "Olá! Quero saber mais sobre o site para o meu trabalho como personal/studio.",
+      "Olá! Quero saber mais sobre o site para o meu trabalho como personal trainer.",
     footnote:
-      "Você não paga só por um site. Paga pra ter toda a presença digital cuidada por nós — Google, WhatsApp, site e acompanhamento — sem dor de cabeça com parte técnica.",
+      "A mensalidade não é custo extra. É o que mantém o seu site online, atualizado e funcionando sem que você precise pensar em parte técnica.",
   },
 
   sobre: {
     title: "Quem cuida do seu projeto",
     paragraphs: [
-      "A Tá Online cuida da presença digital de profissionais e negócios locais de Niterói e região. Não entregamos só um site — cuidamos de tudo que faz você ser encontrado e fechar mais clientes: Google, WhatsApp, site e acompanhamento.",
-      "Atendimento próximo: você fala direto com quem cuida do seu projeto, sem intermediário e sem call center.",
-      "Atendemos personal trainers e studios da região porque entendemos a rotina — agenda cheia, pouco tempo pra parte técnica. Comunicação objetiva e resposta rápida.",
+      "A Tá Online é especialista em presença digital para personal trainers. Construímos o seu site profissional, integrado ao WhatsApp e otimizado para o Google, para você ser encontrado e fechar mais alunos — em qualquer cidade do Brasil.",
+      "Você foca em treinar; nós cuidamos da sua presença online. O atendimento é direto, sem intermediário e sem call center: você fala com quem desenvolve o seu site.",
+      "Entendemos a rotina de quem passa o dia dando aula — agenda cheia, pouco tempo para parte técnica. A proposta é exatamente essa: você não precisa pensar em site.",
     ],
   },
 
@@ -199,6 +193,14 @@ export const personalContent: NicheContent = {
     title: "Perguntas frequentes",
     intro: "Dúvidas comuns antes do início do projeto.",
     items: [
+      {
+        q: "Vocês configuram o meu WhatsApp Business e o Google Meu Negócio?",
+        a: "A integração do WhatsApp fica no seu site: botão direto, botão flutuante e formulário que levam para a sua conversa. A configuração do seu WhatsApp Business e do seu Google Meu Negócio é feita por você — e para isso entregamos um guia de boas práticas, passo a passo, para você otimizar os seus próprios perfis.",
+      },
+      {
+        q: "Atendem personal de qualquer cidade?",
+        a: "Sim. Trabalhamos com personal trainers e studios de todo o Brasil. O site é otimizado para quem procura um personal na sua cidade, então funciona em qualquer região.",
+      },
       {
         q: "Quanto tempo demora para ficar pronto?",
         a: "Entre 7 e 10 dias úteis após o recebimento dos textos e fotos. Em casos urgentes, ajustamos o cronograma em conjunto.",
@@ -209,11 +211,7 @@ export const personalContent: NicheContent = {
       },
       {
         q: "Posso editar o site sozinho depois?",
-        a: "O site é seu. As alterações são feitas pela nossa equipe, já incluídas na mensalidade — você solicita por WhatsApp e nós atualizamos. Para o Google Meu Negócio, ensinamos você a editar.",
-      },
-      {
-        q: "Vocês só fazem para personal e studio?",
-        a: "É o foco principal, mas também atendemos outros pequenos negócios. Vale conversar para verificarmos se faz sentido para o seu caso.",
+        a: "O site é seu. As alterações ficam com a nossa equipe, já incluídas na mensalidade — você solicita por WhatsApp e nós atualizamos.",
       },
       {
         q: "Aceita parcelar?",
@@ -227,20 +225,20 @@ export const personalContent: NicheContent = {
   },
 
   ctaFinal: {
-    title: "Pronto para receber mais alunos pelo Google?",
+    title: "Pronto para ser encontrado e fechar mais alunos?",
     subtitle:
       "Envie uma mensagem para conversarmos. Sem compromisso, sem reunião longa.",
     buttonLabel: "Falar no WhatsApp",
     ctaMessage:
-      "Olá! Quero falar sobre o meu projeto de site (personal/studio).",
+      "Olá! Quero falar sobre um site para o meu trabalho como personal trainer.",
   },
 
   footer: {
     crossSell: {
-      label: "Também atendemos",
+      label: "No site",
       links: [
-        { label: "Advogados em Niterói", href: "/advogados" },
-        { label: "Clínicas de estética em Niterói", href: "/estetica" },
+        { label: "Ver exemplos", href: "#portfolio" },
+        { label: "Investimento", href: "#investimento" },
       ],
     },
   },
