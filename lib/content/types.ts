@@ -44,6 +44,10 @@ export interface NicheContent {
       kind: string;
       bullets: string[];
       href: string | null;
+      /** Domínio exibido no card e na barra do mock (sem protocolo). */
+      url?: string;
+      /** Screenshot real do site, em /public. Quando ausente, mostra o mock vazio. */
+      image?: string;
     }[];
   };
 
