@@ -33,7 +33,7 @@ export const advogadosContent: NicheContent = {
       "Não é só um site. Cuidamos de tudo que faz o escritório ser encontrado no Google e transmitir credibilidade — site institucional, Google Meu Negócio, WhatsApp e acompanhamento. Sempre dentro das normas da OAB.",
     primaryCtaLabel: "Quero meu site",
     primaryCtaMessage:
-      "Olá! Gostaria de saber mais sobre o site para o meu escritório de advocacia.",
+      "Oi! Vim pelo site e queria saber mais 😊",
     secondaryCtaLabel: "Ver exemplos",
   },
 
@@ -181,7 +181,7 @@ export const advogadosContent: NicheContent = {
     },
     ctaLabel: "Quero meu site",
     ctaMessage:
-      "Olá! Quero saber mais sobre o site para o meu escritório de advocacia.",
+      "Oi! Vim pelo site e queria saber mais 😊",
     footnote:
       "Você não paga só por um site. Paga pra ter toda a presença digital do escritório cuidada por nós — Google, WhatsApp, site e acompanhamento — sem dedicar tempo a parte técnica.",
   },
@@ -236,7 +236,7 @@ export const advogadosContent: NicheContent = {
       "Envie uma mensagem para conversarmos. Atendimento sem compromisso.",
     buttonLabel: "Falar no WhatsApp",
     ctaMessage:
-      "Olá! Gostaria de falar sobre um site para o meu escritório de advocacia.",
+      "Oi! Vim pelo site e queria saber mais 😊",
   },
 
   footer: {
@@ -250,5 +250,5 @@ export const advogadosContent: NicheContent = {
   },
 
   floatingMessage:
-    "Olá! Vi o site da Tá Online e gostaria de conversar.",
+    "Oi! Vim pelo site e queria saber mais 😊",
 };

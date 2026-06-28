@@ -32,7 +32,7 @@ export const esteticaContent: NicheContent = {
       "Não é só um site. Cuidamos de tudo que faz a sua clínica ser encontrada no Google e receber agendamentos pelo WhatsApp — site, Google Meu Negócio, WhatsApp e acompanhamento. Tudo por nossa conta.",
     primaryCtaLabel: "Quero meu site",
     primaryCtaMessage:
-      "Olá! Quero um site para a minha clínica de estética.",
+      "Oi! Vim pelo site e queria saber mais 😊",
     secondaryCtaLabel: "Ver exemplos",
   },
 
@@ -180,7 +180,7 @@ export const esteticaContent: NicheContent = {
     },
     ctaLabel: "Quero meu site",
     ctaMessage:
-      "Olá! Quero saber mais sobre o site para a minha clínica de estética.",
+      "Oi! Vim pelo site e queria saber mais 😊",
     footnote:
       "Você não paga só por um site. Paga pra ter toda a presença digital cuidada por nós — Google, WhatsApp, site e acompanhamento — sem dor de cabeça com parte técnica.",
   },
@@ -235,7 +235,7 @@ export const esteticaContent: NicheContent = {
       "Envie uma mensagem para conversarmos. Sem compromisso, sem reunião longa.",
     buttonLabel: "Falar no WhatsApp",
     ctaMessage:
-      "Olá! Quero falar sobre um site para a minha clínica de estética.",
+      "Oi! Vim pelo site e queria saber mais 😊",
   },
 
   footer: {
@@ -249,5 +249,5 @@ export const esteticaContent: NicheContent = {
   },
 
   floatingMessage:
-    "Olá! Vi o site da Tá Online e gostaria de conversar.",
+    "Oi! Vim pelo site e queria saber mais 😊",
 };
