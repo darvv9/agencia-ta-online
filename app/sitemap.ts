@@ -16,7 +16,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.9,
     },
-    // /advogados e /estetica pausados — fora do fluxo principal (sitemap).
-    // As páginas continuam existindo e acessíveis por URL direta.
+    {
+      url: `${SITE.baseUrl}/advogados`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${SITE.baseUrl}/clinicas`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
   ];
 }

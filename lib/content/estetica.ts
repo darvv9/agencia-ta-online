@@ -3,7 +3,7 @@ import type { NicheContent } from "./types";
 export const esteticaContent: NicheContent = {
   niche: "estetica",
   schemaKind: "LocalBusiness",
-  path: "/estetica",
+  path: "/clinicas",
 
   seo: {
     title: "Tá Online — Presença digital para clínicas de estética em Niterói",

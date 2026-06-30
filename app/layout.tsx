@@ -29,21 +29,21 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE.baseUrl),
   title: {
     default:
-      "Tá Online — Presença digital para personal trainers em todo o Brasil",
+      "Tá Online — Posicionamento digital para pequenos e médios negócios",
     template: "%s",
   },
   description:
-    "Especialistas em presença digital para personal trainers. Cuidamos do site inteiro — domínio, hospedagem, suporte e alterações — para você ser encontrado e fechar mais alunos em qualquer cidade do Brasil.",
+    "Agência de posicionamento digital para pequenos e médios negócios. Cuidamos do site inteiro — domínio, hospedagem, suporte e alterações — integrado ao WhatsApp e otimizado para o Google, para o seu negócio ser encontrado e crescer.",
   applicationName: SITE.name,
   authors: [{ name: SITE.name }],
   creator: SITE.name,
   publisher: SITE.name,
   keywords: [
-    "presença digital para personal trainer",
-    "site para personal trainer",
-    "site para personal trainer Brasil",
-    "criação de site para personal trainer",
-    "site para studio de pilates",
+    "agência de posicionamento digital",
+    "presença digital para pequenos negócios",
+    "criação de site profissional",
+    "site integrado ao WhatsApp",
+    "otimização para o Google",
   ],
   alternates: { canonical: "/" },
   openGraph: {
@@ -51,15 +51,15 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     siteName: SITE.name,
     url: SITE.baseUrl,
-    title: "Tá Online — Presença digital para personal trainers",
+    title: "Tá Online — Posicionamento digital para pequenos e médios negócios",
     description:
-      "Site profissional, integrado ao WhatsApp e otimizado para o Google. Para personal trainers de qualquer cidade do Brasil — tudo cuidado por nós.",
+      "Site profissional, integrado ao WhatsApp e otimizado para o Google. Posicionamento digital para o seu negócio — tudo cuidado por nós.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tá Online — Presença digital para personal trainers",
+    title: "Tá Online — Posicionamento digital para pequenos e médios negócios",
     description:
-      "Site profissional, integrado ao WhatsApp e otimizado para o Google. Para personal trainers de qualquer cidade do Brasil.",
+      "Site profissional, integrado ao WhatsApp e otimizado para o Google. Posicionamento digital para pequenos e médios negócios.",
   },
   robots: {
     index: true,

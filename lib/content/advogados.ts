@@ -244,7 +244,7 @@ export const advogadosContent: NicheContent = {
       label: "Também atendemos",
       links: [
         { label: "Personal trainers e studios em Niterói", href: "/personal" },
-        { label: "Clínicas de estética em Niterói", href: "/estetica" },
+        { label: "Clínicas de estética em Niterói", href: "/clinicas" },
       ],
     },
   },

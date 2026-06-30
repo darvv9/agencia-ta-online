@@ -6,11 +6,11 @@ export const metadata: Metadata = {
   title: esteticaContent.seo.title,
   description: esteticaContent.seo.description,
   keywords: esteticaContent.seo.keywords,
-  alternates: { canonical: "/estetica" },
+  alternates: { canonical: "/clinicas" },
   openGraph: {
     title: esteticaContent.seo.title,
     description: esteticaContent.seo.description,
-    url: "/estetica",
+    url: "/clinicas",
     type: "website",
     locale: "pt_BR",
   },
@@ -21,6 +21,6 @@ export const metadata: Metadata = {
   },
 };
 
-export default function EsteticaPage() {
+export default function ClinicasPage() {
   return <NichePage content={esteticaContent} />;
 }

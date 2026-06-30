@@ -7,13 +7,13 @@ Landing page revisada da agência **Tá Online** (Niterói/RJ, dev solo).
 
 ## 1. Negócio
 
-- Agência pequena focada em sites para 3 nichos: **personal trainers/studios**, **advogados** e **clínicas de estética**.
-- **4 páginas**: 1 hub neutro na raiz + 3 landings com mesmo design system mas conteúdo/paleta por nicho:
-  - `/` → hub minimalista (bifurcação para os 3 nichos, sem conteúdo de venda)
+- Agência de **posicionamento digital para pequenos e médios negócios**. Aquisição hoje focada em 3 nichos via tráfego pago: **personal trainers/studios**, **advogados** e **clínicas**.
+- **4 páginas**: 1 home institucional na raiz + 3 landings com mesmo design system mas conteúdo/paleta por nicho:
+  - `/` → home institucional da agência (copy geral de posicionamento digital + seção com os 3 nichos linkando cada landing)
   - `/personal` → personal trainers e studios
   - `/advogados` → advogados e escritórios
-  - `/estetica` → clínicas de estética
-- **Por que hub na raiz**: domínio cru (`agenciataonline.com.br`) é divulgação genérica da marca. Anúncio segmentado manda link específico (`/personal`, `/advogados`, `/estetica`) — não cai no hub.
+  - `/clinicas` → clínicas (rota renomeada de `/estetica`; tema/copy internos seguem com o token `estetica`; `/estetica` tem redirect 308 → `/clinicas` no `next.config.ts`)
+- **Por que home institucional na raiz**: domínio cru (`agenciataonline.com.br`) é a porta de entrada de quem chega organicamente (não via anúncio). Anúncio segmentado manda link específico (`/personal`, `/advogados`, `/clinicas`) — vai direto pra landing do nicho, não cai na home.
 - Modelo: **setup único + mensalidade**, posicionamento "tudo cuidado por nós, você não precisa pensar em parte técnica".
 - A mensalidade é vendida como **benefício** (alterações ilimitadas, suporte, hospedagem inclusa), nunca como custo.
 
@@ -76,7 +76,7 @@ lib/
     types.ts                  # interface NicheContent
     personal.ts               # copy do nicho /personal
     advogados.ts              # copy do nicho /advogados
-    estetica.ts               # copy do nicho /estetica
+    estetica.ts               # copy do nicho /clinicas (token interno "estetica"; path: "/clinicas")
 
 components/
   ui/
@@ -103,11 +103,11 @@ components/
 
 app/
   layout.tsx                  # fontes + metadata base
-  page.tsx                    # / → HubPage (não usa NichePage; auto-contida com data-theme="hub")
+  page.tsx                    # / → HubPage institucional (não usa NichePage; auto-contida com data-theme="hub"; hero geral + pillars + seção de nichos)
   personal/page.tsx           # /personal (NichePage + personalContent)
   advogados/page.tsx          # /advogados
-  estetica/page.tsx           # /estetica
-  sitemap.ts                  # 4 rotas
+  clinicas/page.tsx           # /clinicas (NichePage + esteticaContent; renomeado de estetica/)
+  sitemap.ts                  # 4 rotas (/, /personal, /advogados, /clinicas)
   robots.ts
   globals.css                 # @theme + paletas dos 4 [data-theme] (3 nichos + hub)
   icon.svg                    # favicon SVG vetorial
@@ -162,10 +162,10 @@ Tudo está em `lib/content/<nicho>.ts` seguindo o tipo `NicheContent`. O compone
 
 | Rota | Schema | Title |
 |---|---|---|
-| `/` (hub) | `Organization` | `Tá Online — Sites para pequenos negócios em Niterói` |
-| `/personal` | `LocalBusiness` | `Tá Online — Sites para Personal Trainers e Studios em Niterói` |
+| `/` (home) | `Organization` | `Tá Online — Posicionamento digital para pequenos e médios negócios` |
+| `/personal` | `LocalBusiness` | `Tá Online — Sites para Personal Trainers em todo o Brasil` |
 | `/advogados` | `LegalService` | `Tá Online — Sites para Advogados e Escritórios em Niterói` |
-| `/estetica` | `LocalBusiness` | `Tá Online — Sites para Clínicas de Estética em Niterói` |
+| `/clinicas` | `LocalBusiness` | `Tá Online — Presença digital para clínicas de estética em Niterói` |
 
 ---
 
