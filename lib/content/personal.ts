@@ -153,8 +153,8 @@ export const personalContent: NicheContent = {
     setup: {
       label: "Setup do site",
       tag: "Pagamento único",
-      price: "R$ 1.997",
-      installments: "ou 3x de R$ 697 sem juros no cartão",
+      price: "R$ 997",
+      installments: "ou em até 10x de R$ 99,70 sem juros no cartão",
       bullets: [
         "Site profissional, criado para o seu trabalho como personal",
         "Textos prontos para a sua revisão e aprovação",
@@ -219,7 +219,7 @@ export const personalContent: NicheContent = {
       },
       {
         q: "Aceita parcelar?",
-        a: "Sim. O setup pode ser parcelado em até 3x sem juros no cartão.",
+        a: "Sim. O setup pode ser parcelado em até 10x sem juros no cartão.",
       },
       {
         q: "O site é meu mesmo?",

@@ -155,7 +155,7 @@ export const esteticaContent: NicheContent = {
       label: "Setup do pacote",
       tag: "Pagamento único",
       price: "R$ 1.997",
-      installments: "ou 3x de R$ 697 sem juros no cartão",
+      installments: "ou em até 6x de R$ 349 sem juros no cartão",
       bullets: [
         "Site profissional de 5 a 7 páginas, criado do zero",
         "Google Meu Negócio otimizado e WhatsApp Business configurado",
@@ -223,7 +223,7 @@ export const esteticaContent: NicheContent = {
       },
       {
         q: "Aceita parcelar?",
-        a: "Sim. O setup pode ser parcelado em até 3x sem juros no cartão.",
+        a: "Sim. O setup pode ser parcelado em até 6x sem juros no cartão.",
       },
       {
         q: "O site é meu mesmo?",

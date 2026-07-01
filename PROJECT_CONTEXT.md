@@ -152,11 +152,13 @@ Tudo está em `lib/content/<nicho>.ts` seguindo o tipo `NicheContent`. O compone
 
 ### Preços (por nicho)
 
+Precificação por **poder de compra do nicho** (pesquisa de renda média BR 2025–26): personal autônomo ganha R$ 2,5–5k/mês (setup antigo de R$ 1.997 era barreira → derrubado pra R$ 997); advogado autônomo ~R$ 8,5k+/mês; clínicas/dentistas R$ 5–35k faturamento. Estratégia Meta Ads: **esmagar a entrada** (setup) e **preservar a mensalidade** (receita recorrente). Setup vira escada 997 → 1.997 → 2.497 espelhando a renda.
+
 | Nicho | Setup | Parcelado | Mensal |
 |---|---|---|---|
-| `personal` | R$ 1.997 | 3x R$ 697 | R$ 147/mês |
+| `personal` | R$ 997 | 10x R$ 99,70 | R$ 147/mês |
 | `advogados` | R$ 2.497 | 3x R$ 867 | R$ 197/mês |
-| `estetica` | R$ 1.997 | 3x R$ 697 | R$ 147/mês |
+| `estetica` | R$ 1.997 | 6x R$ 349 | R$ 147/mês |
 
 ### SEO por página
 
