@@ -125,6 +125,17 @@ Tudo está em `lib/content/<nicho>.ts` seguindo o tipo `NicheContent`. O compone
 
 ## 4. Decisões já fechadas (não revisitar sem motivo)
 
+### Escopo / oferta (idêntico nos 3 nichos)
+A oferta é **a mesma** nos 3 nichos — muda só o tom/paleta/preço, nunca o que é entregue. Padrão único (modelo = `personal`):
+- **Site profissional** feito do zero, pronto pro celular.
+- **Integração com WhatsApp no site** (botão direto, flutuante e formulário → conversa).
+- **SEO** (otimização pra aparecer no Google na cidade/área de atuação).
+- **Estrutura preparada para campanhas** (site já vem com pixels do Meta e do Google).
+- **Guia de boas práticas para WhatsApp Business e Google Meu Negócio** — o cliente configura os **próprios** perfis com a nossa orientação.
+- **Hospedagem, domínio e alterações** inclusos na mensalidade.
+
+⚠ **NÃO vendemos serviço gerenciado**: nada de "Google Meu Negócio gerenciado por nós", "WhatsApp Business configurado por nós" (respostas automáticas) nem "acompanhamento/relatório mensal de performance". O antigo posicionamento de "presença digital completa cuidada por nós" (advogados/estética) foi **removido** — o cliente faz GMN e WhatsApp Business sozinho, guiado pelo nosso material.
+
 ### Tom & copy
 - **Pronome**: sempre **`nós`** / verbo 1ª pessoa do plural (`Cuidamos`, `Atendemos`, `Entregamos`). **Nunca `eu`**, nem na seção Sobre. `a gente` evitar (coloquial demais).
 - Trata o leitor por **`você`** (mesmo na página de advogados — formal mas próximo).
@@ -156,7 +167,7 @@ Precificação por **poder de compra do nicho** (pesquisa de renda média BR 202
 
 | Nicho | Setup | Parcelado | Mensal |
 |---|---|---|---|
-| `personal` | R$ 997 | 10x R$ 99,70 | R$ 147/mês |
+| `personal` | R$ 997 | 10x R$ 99,70 | R$ 97/mês |
 | `advogados` | R$ 2.497 | 3x R$ 867 | R$ 197/mês |
 | `estetica` | R$ 1.997 | 6x R$ 349 | R$ 147/mês |
 
@@ -166,8 +177,8 @@ Precificação por **poder de compra do nicho** (pesquisa de renda média BR 202
 |---|---|---|
 | `/` (home) | `Organization` | `Tá Online — Posicionamento digital para pequenos e médios negócios` |
 | `/personal` | `LocalBusiness` | `Tá Online — Sites para Personal Trainers em todo o Brasil` |
-| `/advogados` | `LegalService` | `Tá Online — Sites para Advogados e Escritórios em Niterói` |
-| `/clinicas` | `LocalBusiness` | `Tá Online — Presença digital para clínicas de estética em Niterói` |
+| `/advogados` | `LegalService` | `Tá Online — Sites para Advogados e Escritórios em todo o Brasil` |
+| `/clinicas` | `LocalBusiness` | `Tá Online — Sites para clínicas de estética em todo o Brasil` |
 
 ---
 

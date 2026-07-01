@@ -7,29 +7,29 @@ export const advogadosContent: NicheContent = {
 
   seo: {
     title:
-      "Tá Online — Presença digital para advogados e escritórios em todo o Brasil",
+      "Tá Online — Sites para Advogados e Escritórios em todo o Brasil",
     description:
-      "Agência de presença digital para advogados e escritórios em todo o Brasil. Cuidamos de site institucional, Google Meu Negócio, WhatsApp e SEO local, sempre dentro das normas da OAB.",
+      "Site institucional para advogados e escritórios, integrado ao WhatsApp e otimizado para o Google, para o seu escritório ser encontrado e transmitir credibilidade em qualquer cidade do Brasil. Sempre dentro das normas da OAB.",
     keywords: [
-      "presença digital para advogado",
       "site para advogado",
       "site para escritório de advocacia",
-      "criação de site para advogado",
       "site institucional advogado",
+      "criação de site para advogado",
+      "presença digital para advogado",
     ],
     ogImageAlt:
-      "Presença digital institucional para advogados e escritórios em todo o Brasil",
+      "Site institucional para advogados e escritórios em todo o Brasil",
   },
 
   hero: {
-    eyebrow: "Presença digital para a advocacia",
+    eyebrow: "Sites institucionais para advocacia",
     h1Lines: [
-      "Toda a presença digital",
-      "do seu escritório,",
+      "Sites institucionais para",
+      "advogados e escritórios",
       "em todo o Brasil.",
     ],
     subhead:
-      "Não é só um site. Cuidamos de tudo que faz o escritório ser encontrado no Google e transmitir credibilidade — site institucional, Google Meu Negócio, WhatsApp e acompanhamento. Sempre dentro das normas da OAB.",
+      "Apareça no Google quando alguém procura um advogado na sua área de atuação e transforme esse contato em conversa no WhatsApp. Cuidamos do site inteiro — você foca nos seus casos. Sempre dentro das normas da OAB.",
     primaryCtaLabel: "Quero meu site",
     primaryCtaMessage:
       "Oi! Vim pelo site e queria saber mais 😊",
@@ -59,44 +59,39 @@ export const advogadosContent: NicheContent = {
   },
 
   solucao: {
-    title: "Tudo que está incluso",
+    title: "O que está incluso no seu site",
     intro:
-      "Não é um site solto. É um pacote de presença digital pensado para a advocacia: institucional, sóbrio e alinhado às normas da OAB.",
+      "Cada projeto é pensado para a advocacia: institucional, sóbrio, fácil de manter e otimizado para quem procura um advogado na sua cidade — sempre dentro das normas da OAB.",
     items: [
       {
-        title: "Site institucional",
+        title: "Site institucional pronto para o celular",
         description:
           "Cinco a sete páginas feitas do zero, com estrutura sóbria e adaptadas pro celular — onde boa parte dos seus clientes vai te encontrar.",
       },
       {
-        title: "Google Meu Negócio otimizado e gerenciado",
+        title: "Integração com WhatsApp no site",
         description:
-          "O escritório aparece no Maps e nas buscas de quem procura um advogado na sua região. Configuramos e cuidamos do perfil.",
+          "Botão direto, botão flutuante e formulário que levam para a sua conversa no WhatsApp. O cliente fala com o escritório em um toque, sem formulário longo.",
       },
       {
-        title: "WhatsApp Business configurado",
+        title: "Otimização para aparecer no Google (SEO)",
         description:
-          "Respostas automáticas e contatos organizados, para nenhum cliente ficar sem retorno.",
+          "Estruturamos o site para os termos que as pessoas usam ao procurar um advogado na sua cidade, associados às áreas de atuação do escritório, dentro das normas da OAB.",
       },
       {
-        title: "Contato pelo site via WhatsApp",
+        title: "Estrutura preparada para campanhas",
         description:
-          "Botão de contato em todas as seções, com mensagem pré-preenchida. O cliente fala diretamente com o escritório, sem formulário longo.",
+          "O site já vem pronto para receber os pixels do Meta e do Google, caso o escritório queira anunciar dentro das normas da OAB.",
       },
       {
-        title: "Otimização para buscas locais (SEO)",
+        title: "Guia de boas práticas para WhatsApp Business e Google Meu Negócio",
         description:
-          "Trabalhamos os termos que as pessoas usam ao procurar um advogado na sua cidade, associados às áreas de atuação do escritório, dentro das normas da OAB.",
+          "Você recebe um passo a passo para otimizar os seus próprios perfis no WhatsApp Business e no Google Meu Negócio — feito por você, com a nossa orientação.",
       },
       {
-        title: "Acompanhamento mensal de performance",
+        title: "Hospedagem, domínio e alterações inclusos",
         description:
-          "Todo mês você recebe um relatório do que está funcionando: buscas, contatos e o que dá para melhorar.",
-      },
-      {
-        title: "Hospedagem, domínio e alterações ilimitadas",
-        description:
-          "Tudo incluso na mensalidade. Mudança de endereço, novo associado, atualização de áreas de atuação? Você solicita por WhatsApp e nós atualizamos.",
+          "Tudo cuidado na mensalidade. Mudou de endereço, entrou um novo associado, atualizou as áreas de atuação? Você solicita por WhatsApp e nós atualizamos.",
       },
     ],
   },
@@ -138,12 +133,12 @@ export const advogadosContent: NicheContent = {
       {
         title: "Site no ar em 7 a 10 dias",
         description:
-          "Configurado, otimizado para o Google e estruturado dentro das normas da OAB.",
+          "Configurado, otimizado para o Google, com o WhatsApp integrado e dentro das normas da OAB.",
       },
       {
         title: "Cuidamos de tudo a partir daí",
         description:
-          "Hospedagem, atualizações e ajustes ficam com a nossa equipe.",
+          "Hospedagem, atualizações e ajustes ficam com a nossa equipe. Você foca nos seus casos.",
       },
     ],
   },
@@ -151,17 +146,19 @@ export const advogadosContent: NicheContent = {
   investimento: {
     title: "Investimento",
     intro:
-      "O valor não é só o site — é toda a presença digital do escritório cuidada por nós. O setup monta tudo; a mensalidade mantém funcionando, atualizado e acompanhado.",
+      "Sem letra miúda. O setup é o trabalho de criação do site. A mensalidade é o que mantém ele funcionando, atualizado e suportado.",
     setup: {
-      label: "Setup do pacote",
+      label: "Setup do site",
       tag: "Pagamento único",
       price: "R$ 2.497",
       installments: "ou 3x de R$ 867 sem juros no cartão",
       bullets: [
-        "Site institucional de 5 a 7 páginas, criado do zero",
+        "Site institucional de 5 a 7 páginas, criado do zero para o seu escritório",
         "Estrutura sóbria, alinhada às normas da OAB",
-        "Google Meu Negócio otimizado e WhatsApp Business configurado",
-        "Otimização para buscas locais (SEO)",
+        "Textos prontos para a sua revisão e aprovação",
+        "WhatsApp integrado em todos os pontos de contato",
+        "Estrutura preparada para campanhas (pixels do Meta e do Google)",
+        "Guia de boas práticas para WhatsApp Business e Google Meu Negócio",
         "Entrega em 7 a 10 dias úteis",
       ],
     },
@@ -171,10 +168,10 @@ export const advogadosContent: NicheContent = {
       price: "R$ 197",
       period: "/mês",
       bullets: [
-        "Hospedagem e domínio inclusos",
-        "Gestão do Google Meu Negócio",
-        "Acompanhamento mensal de performance",
-        "Alterações ilimitadas e suporte direto",
+        "Domínio e hospedagem inclusos",
+        "Suporte direto, sem intermediário",
+        "Alterações ilimitadas ao longo do mês",
+        "Backup e monitoramento contínuos",
         "Sem fidelidade — cancelamento a qualquer momento",
       ],
     },
@@ -182,15 +179,15 @@ export const advogadosContent: NicheContent = {
     ctaMessage:
       "Oi! Vim pelo site e queria saber mais 😊",
     footnote:
-      "Você não paga só por um site. Paga pra ter toda a presença digital do escritório cuidada por nós — Google, WhatsApp, site e acompanhamento — sem dedicar tempo a parte técnica.",
+      "A mensalidade não é custo extra. É o que mantém o seu site online, atualizado e funcionando sem que o escritório precise pensar em parte técnica.",
   },
 
   sobre: {
     title: "Quem cuida do seu projeto",
     paragraphs: [
-      "A Tá Online cuida da presença digital de advogados e escritórios em todo o Brasil. Para a advocacia, isso é cuidar de tudo que faz o escritório ser encontrado e transmitir credibilidade: site institucional, Google, WhatsApp e acompanhamento — sempre dentro das normas da OAB.",
-      "Atendimento próximo: você fala direto com quem cuida do seu projeto, sem intermediário e sem call center.",
-      "Atendemos advogados solo e escritórios pequenos de todo o Brasil porque entendemos a realidade — agenda comprometida, foco em casos e clientes, pouco tempo para questões técnicas. Comunicação objetiva e resposta rápida.",
+      "A Tá Online cuida da presença digital de advogados e escritórios em todo o Brasil. Construímos o seu site institucional, integrado ao WhatsApp e otimizado para o Google, para o escritório ser encontrado e transmitir credibilidade — sempre dentro das normas da OAB.",
+      "Você foca nos seus casos; nós cuidamos da sua presença online. O atendimento é direto, sem intermediário e sem call center: você fala com quem desenvolve o seu site.",
+      "Entendemos a rotina de quem passa o dia entre casos e clientes — agenda comprometida, pouco tempo para parte técnica. A proposta é exatamente essa: você não precisa pensar em site.",
     ],
   },
 
@@ -203,6 +200,10 @@ export const advogadosContent: NicheContent = {
         a: "Sim. O Código de Ética e Disciplina da OAB permite presença digital com finalidade informativa. O que não é permitido é captação ostensiva, mercantilização da advocacia, promessa de resultado e comparação com outros profissionais. Nosso padrão é exatamente esse: site institucional, informativo e sóbrio, dentro das normas da Ordem.",
       },
       {
+        q: "Vocês configuram o meu WhatsApp Business e o Google Meu Negócio?",
+        a: "A integração do WhatsApp fica no seu site: botão direto, botão flutuante e formulário que levam para a sua conversa. A configuração do seu WhatsApp Business e do seu Google Meu Negócio é feita por você — e para isso entregamos um guia de boas práticas, passo a passo, para você otimizar os seus próprios perfis.",
+      },
+      {
         q: "Quanto tempo demora para ficar pronto?",
         a: "Entre 7 e 10 dias úteis após o recebimento dos textos e fotos. Em casos urgentes, ajustamos o cronograma em conjunto.",
       },
@@ -212,11 +213,11 @@ export const advogadosContent: NicheContent = {
       },
       {
         q: "Posso editar o site sozinho depois?",
-        a: "O site é seu. As alterações são feitas pela nossa equipe, já incluídas na mensalidade — você solicita por WhatsApp e nós atualizamos. Para o Google Meu Negócio, ensinamos você a editar.",
+        a: "O site é seu. As alterações ficam com a nossa equipe, já incluídas na mensalidade — você solicita por WhatsApp e nós atualizamos.",
       },
       {
         q: "Atendem advogados de qualquer cidade?",
-        a: "Sim. Trabalhamos com advogados e escritórios de todo o Brasil. Configuramos o site, o Google Meu Negócio e o SEO local para a cidade onde o escritório atua, sempre dentro das normas da OAB.",
+        a: "Sim. Trabalhamos com advogados e escritórios de todo o Brasil. O site é otimizado para quem procura um advogado na sua cidade e nas suas áreas de atuação, dentro das normas da OAB — então funciona em qualquer região.",
       },
       {
         q: "Vocês só atendem advogados?",
@@ -234,9 +235,9 @@ export const advogadosContent: NicheContent = {
   },
 
   ctaFinal: {
-    title: "Pronto para fortalecer a presença digital do escritório?",
+    title: "Pronto para ser encontrado e transmitir mais credibilidade?",
     subtitle:
-      "Envie uma mensagem para conversarmos. Atendimento sem compromisso.",
+      "Envie uma mensagem para conversarmos. Sem compromisso, sem reunião longa.",
     buttonLabel: "Falar no WhatsApp",
     ctaMessage:
       "Oi! Vim pelo site e queria saber mais 😊",

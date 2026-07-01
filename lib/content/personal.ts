@@ -167,7 +167,7 @@ export const personalContent: NicheContent = {
     monthly: {
       label: "Plano mensal",
       tag: "Tudo cuidado por nós",
-      price: "R$ 147",
+      price: "R$ 97",
       period: "/mês",
       bullets: [
         "Domínio e hospedagem inclusos",
