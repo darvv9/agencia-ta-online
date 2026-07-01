@@ -6,26 +6,25 @@ export const esteticaContent: NicheContent = {
   path: "/clinicas",
 
   seo: {
-    title: "Tá Online — Presença digital para clínicas de estética em Niterói",
+    title: "Tá Online — Presença digital para clínicas de estética em todo o Brasil",
     description:
-      "Agência de presença digital local em Niterói. Cuidamos de site, Google Meu Negócio, WhatsApp e SEO local pra clínicas de estética serem encontradas e receberem mais agendamentos.",
+      "Agência de presença digital para clínicas de estética em todo o Brasil. Cuidamos de site, Google Meu Negócio, WhatsApp e SEO local pra sua clínica ser encontrada e receber mais agendamentos.",
     keywords: [
-      "agência de presença digital Niterói",
-      "presença digital clínica de estética Niterói",
-      "site para clínica de estética Niterói",
-      "Google Meu Negócio estética Niterói",
-      "clínica de estética Icaraí",
-      "estética avançada Niterói",
+      "presença digital clínica de estética",
+      "site para clínica de estética",
+      "Google Meu Negócio estética",
+      "criação de site para clínica de estética",
+      "site para esteticista",
     ],
     ogImageAlt:
-      "Presença digital completa para clínicas de estética em Niterói",
+      "Presença digital completa para clínicas de estética em todo o Brasil",
   },
 
   hero: {
-    eyebrow: "Presença digital para estética em Niterói",
+    eyebrow: "Presença digital para estética",
     h1Lines: [
       "Sua presença digital",
-      "completa em Niterói.",
+      "completa em todo o Brasil.",
       "Seja encontrada e receba mais agendamentos.",
     ],
     subhead:
@@ -39,11 +38,11 @@ export const esteticaContent: NicheContent = {
   dores: {
     title: "O que afasta uma cliente antes do primeiro agendamento",
     intro:
-      "Conversando com clínicas e profissionais de estética da região, três pontos aparecem com mais frequência.",
+      "Conversando com clínicas e profissionais de estética de todo o Brasil, três pontos aparecem com mais frequência.",
     items: [
       {
         title:
-          "Quem mora perto da sua clínica e busca “estética em Icaraí” precisa encontrar o seu nome — não só o concorrente.",
+          "Quem mora perto da sua clínica e busca “estética na sua cidade” precisa encontrar o seu nome — não só o concorrente.",
       },
       {
         title:
@@ -86,7 +85,7 @@ export const esteticaContent: NicheContent = {
       {
         title: "Otimização para buscas locais (SEO)",
         description:
-          "Trabalhamos termos como “estética em Icaraí” e “limpeza de pele em São Francisco” pra você aparecer antes do concorrente.",
+          "Trabalhamos os termos que as clientes usam ao procurar estética na sua cidade — como “estética” e “limpeza de pele” no seu bairro — pra você aparecer antes do concorrente.",
       },
       {
         title: "Acompanhamento mensal de performance",
@@ -108,13 +107,13 @@ export const esteticaContent: NicheContent = {
     demos: [
       {
         name: "Estúdio Lume Clínica Estética",
-        kind: "Estética facial e corporal — Icaraí",
+        kind: "Estética facial e corporal",
         bullets: ["Procedimentos", "Equipe", "Contato"],
         href: null,
       },
       {
         name: "Aline Faria Estética Avançada",
-        kind: "Estética avançada — São Francisco",
+        kind: "Estética avançada",
         bullets: ["Sobre", "Procedimentos", "Agende"],
         href: null,
       },
@@ -188,9 +187,9 @@ export const esteticaContent: NicheContent = {
   sobre: {
     title: "Quem cuida do seu projeto",
     paragraphs: [
-      "A Tá Online cuida da presença digital de profissionais e negócios locais de Niterói e região. Não entregamos só um site — cuidamos de tudo que faz a clínica ser encontrada e receber mais agendamentos: Google, WhatsApp, site e acompanhamento.",
+      "A Tá Online cuida da presença digital de clínicas de estética em todo o Brasil. Não entregamos só um site — cuidamos de tudo que faz a clínica ser encontrada e receber mais agendamentos: Google, WhatsApp, site e acompanhamento.",
       "Atendimento próximo: você fala direto com quem cuida do seu projeto, sem intermediário e sem call center.",
-      "Atendemos clínicas de estética e profissionais da região porque entendemos a rotina — agenda cheia, foco no atendimento, pouco tempo pra parte técnica. Comunicação objetiva e resposta rápida.",
+      "Atendemos clínicas de estética e profissionais de todo o Brasil porque entendemos a rotina — agenda cheia, foco no atendimento, pouco tempo pra parte técnica. Comunicação objetiva e resposta rápida.",
     ],
   },
 
@@ -213,6 +212,10 @@ export const esteticaContent: NicheContent = {
       {
         q: "Posso editar o site sozinha depois?",
         a: "O site é seu. As alterações são feitas pela nossa equipe, já incluídas na mensalidade — você solicita por WhatsApp e nós atualizamos. Para o Google Meu Negócio, ensinamos você a editar.",
+      },
+      {
+        q: "Atendem clínicas de qualquer cidade?",
+        a: "Sim. Trabalhamos com clínicas e profissionais de estética de todo o Brasil. Configuramos o site, o Google Meu Negócio e o SEO local para a cidade onde você atende.",
       },
       {
         q: "Vocês só atendem clínicas de estética?",
@@ -242,8 +245,8 @@ export const esteticaContent: NicheContent = {
     crossSell: {
       label: "Também atendemos",
       links: [
-        { label: "Personal trainers e studios em Niterói", href: "/personal" },
-        { label: "Advogados em Niterói", href: "/advogados" },
+        { label: "Personal trainers e studios", href: "/personal" },
+        { label: "Advogados", href: "/advogados" },
       ],
     },
   },

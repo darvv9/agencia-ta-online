@@ -7,27 +7,26 @@ export const advogadosContent: NicheContent = {
 
   seo: {
     title:
-      "Tá Online — Presença digital para advogados e escritórios em Niterói",
+      "Tá Online — Presença digital para advogados e escritórios em todo o Brasil",
     description:
-      "Agência de presença digital local em Niterói. Cuidamos de site institucional, Google Meu Negócio, WhatsApp e SEO local para advogados e escritórios, sempre dentro das normas da OAB.",
+      "Agência de presença digital para advogados e escritórios em todo o Brasil. Cuidamos de site institucional, Google Meu Negócio, WhatsApp e SEO local, sempre dentro das normas da OAB.",
     keywords: [
-      "agência de presença digital Niterói",
-      "presença digital advogado Niterói",
-      "site para advogado Niterói",
-      "site para escritório de advocacia Niterói",
+      "presença digital para advogado",
+      "site para advogado",
+      "site para escritório de advocacia",
+      "criação de site para advogado",
       "site institucional advogado",
-      "advogado Icaraí",
     ],
     ogImageAlt:
-      "Presença digital institucional para advogados e escritórios em Niterói",
+      "Presença digital institucional para advogados e escritórios em todo o Brasil",
   },
 
   hero: {
-    eyebrow: "Presença digital para a advocacia em Niterói",
+    eyebrow: "Presença digital para a advocacia",
     h1Lines: [
       "Toda a presença digital",
-      "do seu escritório",
-      "em Niterói.",
+      "do seu escritório,",
+      "em todo o Brasil.",
     ],
     subhead:
       "Não é só um site. Cuidamos de tudo que faz o escritório ser encontrado no Google e transmitir credibilidade — site institucional, Google Meu Negócio, WhatsApp e acompanhamento. Sempre dentro das normas da OAB.",
@@ -40,11 +39,11 @@ export const advogadosContent: NicheContent = {
   dores: {
     title: "Três pontos que escritórios pequenos enfrentam no digital",
     intro:
-      "Conversando com advogados solo e escritórios pequenos em Niterói, três situações se repetem.",
+      "Conversando com advogados solo e escritórios pequenos de todo o Brasil, três situações se repetem.",
     items: [
       {
         title:
-          "Potenciais clientes buscam advogados na sua área de atuação e em Niterói — e não encontram o seu nome.",
+          "Potenciais clientes buscam advogados na sua área de atuação e na sua cidade — e não encontram o seu nome.",
       },
       {
         title:
@@ -72,7 +71,7 @@ export const advogadosContent: NicheContent = {
       {
         title: "Google Meu Negócio otimizado e gerenciado",
         description:
-          "O escritório aparece no Maps e nas buscas de quem procura um advogado na região. Configuramos e cuidamos do perfil.",
+          "O escritório aparece no Maps e nas buscas de quem procura um advogado na sua região. Configuramos e cuidamos do perfil.",
       },
       {
         title: "WhatsApp Business configurado",
@@ -87,7 +86,7 @@ export const advogadosContent: NicheContent = {
       {
         title: "Otimização para buscas locais (SEO)",
         description:
-          "Trabalhamos termos como “advogado em Niterói” e o nome do escritório associado às áreas de atuação, dentro das normas da OAB.",
+          "Trabalhamos os termos que as pessoas usam ao procurar um advogado na sua cidade, associados às áreas de atuação do escritório, dentro das normas da OAB.",
       },
       {
         title: "Acompanhamento mensal de performance",
@@ -109,13 +108,13 @@ export const advogadosContent: NicheContent = {
     demos: [
       {
         name: "Silva e Almeida Advocacia",
-        kind: "Escritório de advocacia — Niterói",
+        kind: "Escritório de advocacia",
         bullets: ["Atuação", "Equipe", "Contato"],
         href: null,
       },
       {
         name: "Carla Mendes Advogada",
-        kind: "Advogada associada — Icaraí",
+        kind: "Advogada associada",
         bullets: ["Atuação", "Sobre", "Contato"],
         href: null,
       },
@@ -189,9 +188,9 @@ export const advogadosContent: NicheContent = {
   sobre: {
     title: "Quem cuida do seu projeto",
     paragraphs: [
-      "A Tá Online cuida da presença digital de profissionais e negócios locais de Niterói e região. Para a advocacia, isso é cuidar de tudo que faz o escritório ser encontrado e transmitir credibilidade: site institucional, Google, WhatsApp e acompanhamento — sempre dentro das normas da OAB.",
+      "A Tá Online cuida da presença digital de advogados e escritórios em todo o Brasil. Para a advocacia, isso é cuidar de tudo que faz o escritório ser encontrado e transmitir credibilidade: site institucional, Google, WhatsApp e acompanhamento — sempre dentro das normas da OAB.",
       "Atendimento próximo: você fala direto com quem cuida do seu projeto, sem intermediário e sem call center.",
-      "Atendemos advogados solo e escritórios pequenos da região porque entendemos a realidade — agenda comprometida, foco em casos e clientes, pouco tempo para questões técnicas. Comunicação objetiva e resposta rápida.",
+      "Atendemos advogados solo e escritórios pequenos de todo o Brasil porque entendemos a realidade — agenda comprometida, foco em casos e clientes, pouco tempo para questões técnicas. Comunicação objetiva e resposta rápida.",
     ],
   },
 
@@ -214,6 +213,10 @@ export const advogadosContent: NicheContent = {
       {
         q: "Posso editar o site sozinho depois?",
         a: "O site é seu. As alterações são feitas pela nossa equipe, já incluídas na mensalidade — você solicita por WhatsApp e nós atualizamos. Para o Google Meu Negócio, ensinamos você a editar.",
+      },
+      {
+        q: "Atendem advogados de qualquer cidade?",
+        a: "Sim. Trabalhamos com advogados e escritórios de todo o Brasil. Configuramos o site, o Google Meu Negócio e o SEO local para a cidade onde o escritório atua, sempre dentro das normas da OAB.",
       },
       {
         q: "Vocês só atendem advogados?",
@@ -243,8 +246,8 @@ export const advogadosContent: NicheContent = {
     crossSell: {
       label: "Também atendemos",
       links: [
-        { label: "Personal trainers e studios em Niterói", href: "/personal" },
-        { label: "Clínicas de estética em Niterói", href: "/clinicas" },
+        { label: "Personal trainers e studios", href: "/personal" },
+        { label: "Clínicas de estética", href: "/clinicas" },
       ],
     },
   },
