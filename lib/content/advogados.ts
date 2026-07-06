@@ -32,7 +32,7 @@ export const advogadosContent: NicheContent = {
       "Apareça no Google quando alguém procura um advogado na sua área de atuação e transforme esse contato em conversa no WhatsApp. Cuidamos do site inteiro — você foca nos seus casos. Sempre dentro das normas da OAB.",
     primaryCtaLabel: "Quero meu site",
     primaryCtaMessage:
-      "Oi! Vim pelo site e queria saber mais 😊",
+      "Olá! Vim pelo site e gostaria de saber mais.",
     secondaryCtaLabel: "Ver exemplos",
   },
 
@@ -177,7 +177,7 @@ export const advogadosContent: NicheContent = {
     },
     ctaLabel: "Quero meu site",
     ctaMessage:
-      "Oi! Vim pelo site e queria saber mais 😊",
+      "Olá! Vim pelo site e gostaria de saber mais.",
     footnote:
       "A mensalidade não é custo extra. É o que mantém o seu site online, atualizado e funcionando sem que o escritório precise pensar em parte técnica.",
   },
@@ -240,7 +240,7 @@ export const advogadosContent: NicheContent = {
       "Envie uma mensagem para conversarmos. Sem compromisso, sem reunião longa.",
     buttonLabel: "Falar no WhatsApp",
     ctaMessage:
-      "Oi! Vim pelo site e queria saber mais 😊",
+      "Olá! Vim pelo site e gostaria de saber mais.",
   },
 
   footer: {
@@ -254,5 +254,5 @@ export const advogadosContent: NicheContent = {
   },
 
   floatingMessage:
-    "Oi! Vim pelo site e queria saber mais 😊",
+    "Olá! Vim pelo site e gostaria de saber mais.",
 };

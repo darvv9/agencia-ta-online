@@ -31,7 +31,7 @@ export const personalContent: NicheContent = {
       "Apareça no Google quando alguém procura um personal na sua cidade e transforme esse contato em conversa no WhatsApp. Cuidamos do site inteiro — você foca no treino.",
     primaryCtaLabel: "Quero meu site",
     primaryCtaMessage:
-      "Oi! Vim pelo site e queria saber mais 😊",
+      "Olá! Vim pelo site e gostaria de saber mais.",
     secondaryCtaLabel: "Ver exemplos",
   },
 
@@ -179,7 +179,7 @@ export const personalContent: NicheContent = {
     },
     ctaLabel: "Quero meu site",
     ctaMessage:
-      "Oi! Vim pelo site e queria saber mais 😊",
+      "Olá! Vim pelo site e gostaria de saber mais.",
     footnote:
       "A mensalidade não é custo extra. É o que mantém o seu site online, atualizado e funcionando sem que você precise pensar em parte técnica.",
   },
@@ -234,7 +234,7 @@ export const personalContent: NicheContent = {
       "Envie uma mensagem para conversarmos. Sem compromisso, sem reunião longa.",
     buttonLabel: "Falar no WhatsApp",
     ctaMessage:
-      "Oi! Vim pelo site e queria saber mais 😊",
+      "Olá! Vim pelo site e gostaria de saber mais.",
   },
 
   footer: {
@@ -248,5 +248,5 @@ export const personalContent: NicheContent = {
   },
 
   floatingMessage:
-    "Oi! Vim pelo site e queria saber mais 😊",
+    "Olá! Vim pelo site e gostaria de saber mais.",
 };

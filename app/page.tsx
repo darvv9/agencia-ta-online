@@ -106,7 +106,7 @@ const hubSchema = {
 export default function HubPage() {
   const year = new Date().getFullYear();
   const waHref = whatsappUrl(
-    "Oi! Vim pelo site e queria saber mais 😊",
+    "Olá! Vim pelo site e gostaria de saber mais.",
   );
 
   return (
@@ -247,7 +247,7 @@ export default function HubPage() {
         </Container>
       </footer>
 
-      <FloatingWhatsappBar message="Oi! Vim pelo site e queria saber mais 😊" />
+      <FloatingWhatsappBar message="Olá! Vim pelo site e gostaria de saber mais." />
       <JsonLd data={hubSchema} />
     </div>
   );

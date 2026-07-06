@@ -31,7 +31,7 @@ export const esteticaContent: NicheContent = {
       "Apareça no Google quando alguém procura estética na sua cidade e transforme esse contato em agendamento pelo WhatsApp. Cuidamos do site inteiro — você foca no atendimento.",
     primaryCtaLabel: "Quero meu site",
     primaryCtaMessage:
-      "Oi! Vim pelo site e queria saber mais 😊",
+      "Olá! Vim pelo site e gostaria de saber mais.",
     secondaryCtaLabel: "Ver exemplos",
   },
 
@@ -175,7 +175,7 @@ export const esteticaContent: NicheContent = {
     },
     ctaLabel: "Quero meu site",
     ctaMessage:
-      "Oi! Vim pelo site e queria saber mais 😊",
+      "Olá! Vim pelo site e gostaria de saber mais.",
     footnote:
       "A mensalidade não é custo extra. É o que mantém o seu site online, atualizado e funcionando sem que você precise pensar em parte técnica.",
   },
@@ -238,7 +238,7 @@ export const esteticaContent: NicheContent = {
       "Envie uma mensagem para conversarmos. Sem compromisso, sem reunião longa.",
     buttonLabel: "Falar no WhatsApp",
     ctaMessage:
-      "Oi! Vim pelo site e queria saber mais 😊",
+      "Olá! Vim pelo site e gostaria de saber mais.",
   },
 
   footer: {
@@ -252,5 +252,5 @@ export const esteticaContent: NicheContent = {
   },
 
   floatingMessage:
-    "Oi! Vim pelo site e queria saber mais 😊",
+    "Olá! Vim pelo site e gostaria de saber mais.",
 };

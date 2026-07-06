@@ -9,7 +9,7 @@ type Props = { content: NicheContent };
 export function Footer({ content }: Props) {
   const year = new Date().getFullYear();
   const waHref = whatsappUrl(
-    "Oi! Vim pelo site e queria saber mais 😊",
+    "Olá! Vim pelo site e gostaria de saber mais.",
   );
 
   return (
