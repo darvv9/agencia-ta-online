@@ -43,3 +43,6 @@ next-env.d.ts
 # dados sensiveis de clientes — NUNCA versionar (repo publico)
 INFORMACAO DE CLIENTES.txt
 *CLIENTES*.txt
+
+# claude code — permissoes locais da maquina (pessoal, nao versionar)
+.claude/settings.local.json
