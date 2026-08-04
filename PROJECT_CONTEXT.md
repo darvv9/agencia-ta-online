@@ -163,7 +163,7 @@ A oferta é **a mesma** nos 3 nichos — muda só o tom/paleta/preço, nunca o q
 
 ### Preços (por nicho)
 
-Precificação por **poder de compra do nicho** (pesquisa de renda média BR 2025–26): personal autônomo ganha R$ 2,5–5k/mês (setup antigo de R$ 1.997 era barreira → derrubado pra R$ 997); advogado autônomo ~R$ 8,5k+/mês; clínicas/dentistas R$ 5–35k faturamento. Estratégia Meta Ads: **esmagar a entrada** (setup) e **preservar a mensalidade** (receita recorrente).
+Precificação por **poder de compra do nicho** (pesquisa de renda média BR 2025–26): personal autônomo ganha R$ 2,5–5k/mês (setup antigo de R$ 1.997 era barreira → derrubado pra R$ 997); advogado autônomo ~R$ 8,5k+/mês; clínicas/dentistas R$ 5–35k faturamento. Estratégia Meta Ads original: **esmagar a entrada** (setup) e **preservar a mensalidade** (receita recorrente) — ainda vale para `personal` e `estetica`.
 
 ⚠ **Mudança em 2026-08-04**: advogados foi realinhado pra baixo — setup R$ 2.497 → **R$ 997** e mensal R$ 197 → **R$ 79,90** — pra derrubar a barreira de entrada e destravar a primeira venda. A escada de setup por renda (997 → 1.997 → 2.497) **não vale mais** nesse nicho: advogados agora entra no mesmo patamar de setup do personal, com a menor mensalidade das três.
 

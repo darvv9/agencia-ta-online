@@ -41,11 +41,15 @@ Receita total = Σ (setups fechados)  +  Σ (mensalidades pagas até o cliente s
 
 | Nicho | Setup | Mensal |
 |---|---|---|
-| personal | R$ 997 | R$ 147 |
+| personal | R$ 997 | R$ 97 |
 | clínicas | R$ 1.997 | R$ 147 |
 | advogados | R$ 997 | R$ 79,90 |
 
-Setup médio ponderado ≈ **R$ 1.330** · Mensal médio ≈ **R$ 125**.
+Setup médio ≈ **R$ 1.330** · Mensal médio ≈ **R$ 108**.
+
+> A fonte da verdade dos preços é `lib/content/<nicho>.ts` — é o que o cliente vê
+> na landing. Esta tabela e a do `PROJECT_CONTEXT.md` seguem o código; se
+> divergirem, o código vence.
 
 ---
 
@@ -55,16 +59,22 @@ Setup médio ponderado ≈ **R$ 1.330** · Mensal médio ≈ **R$ 125**.
 > conversão de anúncio, ticket e churn.
 
 ### Caminho A — corrida de ~12 meses (mais setups)
-- ~22 clientes fechados no ano (mix dos 3 nichos)
-- Setups: 22 × R$ 1.800 ≈ **R$ 39.600**
-- Recorrente acumulado no ano (com ~20% de churn) ≈ **R$ 20.000**
-- **Total ≈ R$ 59.600** ✅
+- ~32 clientes fechados no ano (mix dos 3 nichos)
+- Setups: 32 × R$ 1.330 ≈ **R$ 42.600**
+- Recorrente acumulado no ano (com ~20% de churn) ≈ **R$ 16.600**
+- **Total ≈ R$ 59.200** ✅
 
 ### Caminho B — menos clientes, mais tempo (mais recorrente)
-- ~15 clientes, mantidos em média ~16–18 meses
-- Setups: 15 × R$ 1.800 ≈ **R$ 27.000**
+- ~22 clientes, mantidos em média ~16–18 meses
+- Setups: 22 × R$ 1.330 ≈ **R$ 29.300**
 - Recorrente: MRR ~R$ 2.000 × ~16 meses ≈ **R$ 32.000**
-- **Total ≈ R$ 59.000** ✅
+- **Total ≈ R$ 61.300** ✅
+
+> **Efeito do corte de preço de ago/26**: com o setup médio caindo de R$ 1.800
+> para R$ 1.330 e o mensal de R$ 164 para R$ 108, a meta passou a exigir ~45%
+> mais clientes que a versão anterior deste documento (A: 22 → 32 · B: 15 → 22).
+> A aposta é que o preço menor converta bem mais barato no Meta Ads e compense
+> o volume extra — é isso que a campanha de advogados precisa provar.
 
 O Caminho B dá **menos operação por real faturado** (o recorrente trabalha por
 você) — costuma ser o melhor pra quem quer fazer o exit e sair.
