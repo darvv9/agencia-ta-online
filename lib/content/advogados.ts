@@ -150,8 +150,8 @@ export const advogadosContent: NicheContent = {
     setup: {
       label: "Setup do site",
       tag: "Pagamento único",
-      price: "R$ 2.497",
-      installments: "ou 3x de R$ 867 sem juros no cartão",
+      price: "R$ 997",
+      installments: "ou em até 10x de R$ 99,70 sem juros no cartão",
       bullets: [
         "Site institucional de 5 a 7 páginas, criado do zero para o seu escritório",
         "Estrutura sóbria, alinhada às normas da OAB",
@@ -165,7 +165,7 @@ export const advogadosContent: NicheContent = {
     monthly: {
       label: "Plano mensal",
       tag: "Tudo cuidado por nós",
-      price: "R$ 197",
+      price: "R$ 79,90",
       period: "/mês",
       bullets: [
         "Domínio e hospedagem inclusos",

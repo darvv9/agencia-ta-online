@@ -43,9 +43,9 @@ Receita total = Σ (setups fechados)  +  Σ (mensalidades pagas até o cliente s
 |---|---|---|
 | personal | R$ 997 | R$ 147 |
 | clínicas | R$ 1.997 | R$ 147 |
-| advogados | R$ 2.497 | R$ 197 |
+| advogados | R$ 997 | R$ 79,90 |
 
-Setup médio ponderado ≈ **R$ 1.800** · Mensal médio ≈ **R$ 164**.
+Setup médio ponderado ≈ **R$ 1.330** · Mensal médio ≈ **R$ 125**.
 
 ---
 
