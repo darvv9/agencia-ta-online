@@ -15,8 +15,8 @@
   --color-accent: var(--accent);
   --color-soft: var(--soft);
 
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-source-serif), Georgia, "Times New Roman", serif;
 }
 
 :root,
@@ -83,7 +83,6 @@ html {
 body {
   background-color: var(--bg);
   color: var(--fg);
-  font-feature-settings: "ss01", "cv11";
 }
 
 @keyframes fade-up {

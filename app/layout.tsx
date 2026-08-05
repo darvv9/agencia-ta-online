@@ -1,22 +1,20 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
-import { Inter, Fraunces } from "next/font/google";
+import { Manrope, Source_Serif_4 } from "next/font/google";
 import { SITE } from "@/lib/site";
 import { MetaPixel } from "@/components/MetaPixel";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
+const manrope = Manrope({
+  variable: "--font-manrope",
   subsets: ["latin"],
   display: "swap",
 });
 
-const fraunces = Fraunces({
-  variable: "--font-fraunces",
+const sourceSerif = Source_Serif_4({
+  variable: "--font-source-serif",
   subsets: ["latin"],
   display: "swap",
-  weight: ["400", "500", "600", "700"],
-  style: ["normal", "italic"],
 });
 
 export const viewport: Viewport = {
@@ -81,7 +79,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${inter.variable} ${fraunces.variable} h-full antialiased`}
+      className={`${manrope.variable} ${sourceSerif.variable} h-full antialiased`}
     >
       <body className="min-h-full font-sans antialiased">
         {children}

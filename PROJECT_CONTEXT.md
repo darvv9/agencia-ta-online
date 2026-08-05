@@ -49,7 +49,7 @@ Landing page revisada da agência **Tá Online** (Niterói/RJ, dev solo).
 
 - **Next.js 16.2.1** (App Router, Turbopack) + **React 19.2.4** + **Tailwind CSS v4** (`@tailwindcss/postcss`, `@theme inline` no CSS).
 - **TypeScript estrito**, ESLint 9 (`eslint-config-next`).
-- **Fontes**: `Inter` (corpo) + `Fraunces` (display/títulos) via `next/font/google`.
+- **Fontes**: `Manrope` (corpo) + `Source Serif 4` (display/títulos) via `next/font/google`. Ambas são variable fonts — **não** declarar `weight` no loader. Trocadas em 2026-08-04: saíram `Inter` + `Fraunces`, que davam à marca a cara genérica de produto de IA.
 - **Sem libs adicionais** — animações são CSS puro, ícones são SVG inline.
 
 ### ⚠ Next.js 16 tem breaking changes
@@ -85,7 +85,7 @@ components/
     Button.tsx                # CTA com variants (primary/secondary/ghost/onPrimary)
     JsonLd.tsx                # <script type="application/ld+json">
     BrowserMock.tsx           # mockup SVG de browser (usado no Portfolio)
-    Logo.tsx                  # wordmark "tá online." em Fraunces
+    Logo.tsx                  # wordmark "tá online." em Source Serif 4 (font-display)
   sections/
     SiteHeader.tsx            # header sticky minimalista (logo + âncora "Investimento")
     Hero.tsx                  # H1 + subhead + 2 CTAs
