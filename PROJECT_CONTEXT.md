@@ -150,7 +150,8 @@ A oferta é **a mesma** nos 3 nichos — muda só o tom/paleta/preço, nunca o q
 - **Navegação cruzada entre nichos** = **só no footer** (`crossSell`) nas páginas de nicho. No hub, os 3 cards JÁ são o cross-sell.
 - **Hub** (`/`) é auto-contido em `app/page.tsx` — não usa `NichePage`, `SiteHeader` nem `Footer` de nicho. Tem Logo central + H1 + subhead + 3 cards + footer mínimo + `FloatingWhatsappBar`. Schema é `Organization` (sem nicho).
 - **Sobre** tem um círculo placeholder que mostra `<Logo size="lg">` no centro. Quando o usuário enviar a foto, substituir por `<Image src="/sobre.jpg" ... />` (comentário TODO já no código).
-- **Portfólio** usa `BrowserMock` em SVG/CSS. Cada nicho tem 2 demos fictícios com `href: null` (badge "Em breve"). Quando o usuário gerar URLs reais, trocar `href: null` em `lib/content/<nicho>.ts`.
+- **Portfólio** usa `BrowserMock` em SVG/CSS, com 2 demos fictícios de `href: null` (badge "Em breve") em `personal` e `estetica`. Quando o usuário gerar URLs reais, trocar `href: null` em `lib/content/<nicho>.ts`.
+- O bloco `portfolio` é **opcional** no `NicheContent`. Omitido, o `Portfolio` retorna `null` e a seção some da página. **`advogados` não tem portfólio** (removido em 2026-08-04, a pedido do usuário — não reintroduzir sem ele pedir). Nesse caso o CTA secundário do `Hero` aponta para `#investimento` em vez de `#portfolio`.
 
 ### Paletas (em `app/globals.css`)
 
@@ -207,7 +208,7 @@ As **4 páginas** estão no ar (em build local), commitadas e prontas. **Branch 
 #### O que falta — dependente de ativos do usuário, não de código
 
 1. **Foto da seção Sobre** — substituir o placeholder em `components/sections/Sobre.tsx` por `<Image src="/sobre.jpg" ... />` quando a foto chegar.
-2. **Links reais do Portfolio** — quando os 6 demos forem ao ar (2 por nicho), trocar `href: null` em `lib/content/<nicho>.ts → portfolio.demos[i].href` pela URL real.
+2. **Links reais do Portfolio** — quando os 4 demos forem ao ar (2 em `personal`, 2 em `estetica`; `advogados` não tem portfólio), trocar `href: null` em `lib/content/<nicho>.ts → portfolio.demos[i].href` pela URL real.
 3. **`apple-icon.png`** (opcional) — gerar a partir de `app/icon.svg` se quiser cobrir iOS antigo (Next 16 não aceita SVG pra apple-icon — testado).
 4. **`public/favicon.png`** (671KB, não referenciado) — pode deletar manualmente.
 5. **`git push`** quando o usuário aprovar mandar `bed649f` pro `origin/main`.

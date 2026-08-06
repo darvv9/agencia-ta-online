@@ -33,7 +33,7 @@ export const advogadosContent: NicheContent = {
     primaryCtaLabel: "Quero meu site",
     primaryCtaMessage:
       "Olá! Vim pelo site e gostaria de saber mais.",
-    secondaryCtaLabel: "Ver exemplos",
+    secondaryCtaLabel: "Ver investimento",
   },
 
   dores: {
@@ -92,26 +92,6 @@ export const advogadosContent: NicheContent = {
         title: "Hospedagem, domínio e alterações inclusos",
         description:
           "Tudo cuidado na mensalidade. Mudou de endereço, entrou um novo associado, atualizou as áreas de atuação? Você solicita por WhatsApp e nós atualizamos.",
-      },
-    ],
-  },
-
-  portfolio: {
-    title: "Exemplos do que entregamos",
-    intro:
-      "Estrutura aplicada a escritórios pequenos e advogados solo. Cada projeto é desenvolvido do zero.",
-    demos: [
-      {
-        name: "Silva e Almeida Advocacia",
-        kind: "Escritório de advocacia",
-        bullets: ["Atuação", "Equipe", "Contato"],
-        href: null,
-      },
-      {
-        name: "Carla Mendes Advogada",
-        kind: "Advogada associada",
-        bullets: ["Atuação", "Sobre", "Contato"],
-        href: null,
       },
     ],
   },

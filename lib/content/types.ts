@@ -36,7 +36,8 @@ export interface NicheContent {
     items: { title: string; description: string }[];
   };
 
-  portfolio: {
+  /** Opcional: nichos sem exemplos publicados omitem o bloco e a seção some da página. */
+  portfolio?: {
     title: string;
     intro: string;
     demos: {

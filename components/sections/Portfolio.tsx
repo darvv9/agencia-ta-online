@@ -12,6 +12,7 @@ type Props = { content: NicheContent };
 
 export function Portfolio({ content }: Props) {
   const { portfolio } = content;
+  if (!portfolio) return null;
   return (
     <Section id="portfolio" variant="surface" ariaLabel="Portfólio">
       <Container>
