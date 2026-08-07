@@ -38,6 +38,8 @@ export interface NicheContent {
     title: string;
     intro: string;
     items: { title: string; description: string }[];
+    /** Opcional: faixa de imagem entre o título e a grade de itens. */
+    image?: { src: string; alt: string };
   };
 
   /** Opcional: nichos sem exemplos publicados omitem o bloco e a seção some da página. */
@@ -56,7 +58,8 @@ export interface NicheContent {
     }[];
   };
 
-  comoFunciona: {
+  /** Opcional: landings enxutas cortam esta seção para encurtar o caminho até o CTA. */
+  comoFunciona?: {
     title: string;
     intro: string;
     steps: { title: string; description: string }[];
@@ -84,7 +87,8 @@ export interface NicheContent {
     footnote: string;
   };
 
-  sobre: {
+  /** Opcional: idem `comoFunciona`. */
+  sobre?: {
     title: string;
     paragraphs: string[];
   };

@@ -6,6 +6,7 @@ type Props = { content: NicheContent };
 
 export function ComoFunciona({ content }: Props) {
   const { comoFunciona } = content;
+  if (!comoFunciona) return null;
   return (
     <Section ariaLabel="Como funciona">
       <Container>

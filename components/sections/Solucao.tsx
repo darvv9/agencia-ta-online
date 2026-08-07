@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import type { NicheContent } from "@/lib/content/types";
@@ -35,6 +36,17 @@ export function Solucao({ content }: Props) {
           </h2>
           <p className="text-fg-muted mt-5 text-lg">{solucao.intro}</p>
         </div>
+        {solucao.image && (
+          <div className="border-line relative mx-auto mt-12 aspect-[21/9] w-full max-w-5xl overflow-hidden rounded-3xl border">
+            <Image
+              src={solucao.image.src}
+              alt={solucao.image.alt}
+              fill
+              sizes="(min-width: 1024px) 1024px, 100vw"
+              className="object-cover"
+            />
+          </div>
+        )}
         <ul className="mx-auto mt-14 grid max-w-5xl gap-5 md:grid-cols-2">
           {solucao.items.map((item, i) => (
             <li

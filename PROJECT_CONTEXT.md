@@ -49,7 +49,7 @@ Landing page revisada da agência **Tá Online** (Niterói/RJ, dev solo).
 
 - **Next.js 16.2.1** (App Router, Turbopack) + **React 19.2.4** + **Tailwind CSS v4** (`@tailwindcss/postcss`, `@theme inline` no CSS).
 - **TypeScript estrito**, ESLint 9 (`eslint-config-next`).
-- **Fontes**: `Manrope` (corpo) + `Source Serif 4` (display/títulos) via `next/font/google`. Ambas são variable fonts — **não** declarar `weight` no loader. Trocadas em 2026-08-04: saíram `Inter` + `Fraunces`, que davam à marca a cara genérica de produto de IA.
+- **Fontes**: `Public Sans` (corpo) + `Archivo` (display/títulos) via `next/font/google`. Ambas são variable fonts — **não** declarar `weight` no loader. Histórico: `Inter` + `Fraunces` saíram em 2026-08-04 (cara genérica de produto de IA); `Manrope` + `Source Serif 4` entraram e saíram em 2026-08-07, porque o usuário continuou lendo a serifada de título como "fonte de IA". **A regra que ficou: nada de serifada no display.**
 - **Sem libs adicionais** — animações são CSS puro, ícones são SVG inline.
 
 ### ⚠ Next.js 16 tem breaking changes
@@ -85,7 +85,8 @@ components/
     Button.tsx                # CTA com variants (primary/secondary/ghost/onPrimary)
     JsonLd.tsx                # <script type="application/ld+json">
     BrowserMock.tsx           # mockup SVG de browser (usado no Portfolio)
-    Logo.tsx                  # wordmark "tá online." em Source Serif 4 (font-display)
+    Logo.tsx                  # wordmark "tá online." em Archivo (font-display)
+    WhatsappIcon.tsx          # glifo do WhatsApp, usado nos CTAs e na barra flutuante
   sections/
     SiteHeader.tsx            # header sticky minimalista (logo + âncora "Investimento")
     Hero.tsx                  # H1 + subhead + 2 CTAs
@@ -151,7 +152,16 @@ A oferta é **a mesma** nos 3 nichos — muda só o tom/paleta/preço, nunca o q
 - **Hub** (`/`) é auto-contido em `app/page.tsx` — não usa `NichePage`, `SiteHeader` nem `Footer` de nicho. Tem Logo central + H1 + subhead + 3 cards + footer mínimo + `FloatingWhatsappBar`. Schema é `Organization` (sem nicho).
 - **Sobre** tem um círculo placeholder que mostra `<Logo size="lg">` no centro. Quando o usuário enviar a foto, substituir por `<Image src="/sobre.jpg" ... />` (comentário TODO já no código).
 - **Portfólio** usa `BrowserMock` em SVG/CSS, com 2 demos fictícios de `href: null` (badge "Em breve") em `personal` e `estetica`. Quando o usuário gerar URLs reais, trocar `href: null` em `lib/content/<nicho>.ts`.
-- O bloco `portfolio` é **opcional** no `NicheContent`. Omitido, o `Portfolio` retorna `null` e a seção some da página. **`advogados` não tem portfólio** (removido em 2026-08-04, a pedido do usuário — não reintroduzir sem ele pedir). Nesse caso o CTA secundário do `Hero` aponta para `#investimento` em vez de `#portfolio`.
+- Os blocos `portfolio`, `comoFunciona` e `sobre` são **opcionais** no `NicheContent`. Omitidos, a seção correspondente retorna `null` e some da página. Sem `portfolio`, o CTA secundário do `Hero` aponta para `#investimento`.
+
+### ⚠ `/advogados` é a landing enxuta (não "completar" de volta)
+
+Em 2026-08-07 a página levou 210 visitas da campanha paga e **zero** cliques no WhatsApp. Foi reduzida de propósito para encurtar o caminho até o CTA — **não reintroduzir seções nem alongar a copy sem o usuário pedir**:
+
+- Seções: `Hero → Dores → Solucao → Investimento → FAQ → CTAFinal`. `portfolio`, `comoFunciona` e `sobre` estão **cortadas**.
+- Copy curta e direta: Solução tem 4 itens (não 6), FAQ tem 5 perguntas (não 9), bullets encurtados.
+- **CTAs de WhatsApp**: variante `whatsapp` do `Button` (teal `#128C7E` + `WhatsappIcon`). O verde vivo `#25D366` foi recusado por ser chamativo demais. Há CTA no header sticky, no hero, no investimento, no final e na pílula flutuante.
+- **Imagens** em `public/advogados/` (`hero.jpg`, `escritorio.jpg`): fotos do Pexels (licença livre para uso comercial). O usuário pediu explicitamente banco de imagem e **rejeitou** reaproveitar as artes dos criativos da agência.
 
 ### Paletas (em `app/globals.css`)
 

@@ -14,7 +14,7 @@ export function FloatingWhatsappBar({ message }: Props) {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Conversar no WhatsApp"
-      className="fixed right-4 bottom-4 z-50 inline-flex items-center gap-2.5 rounded-full bg-[#25D366] py-3.5 pr-5 pl-4 text-white shadow-lg shadow-black/20 transition-all hover:scale-[1.03] hover:bg-[#1ebe57] focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#128C7E] sm:right-8 sm:bottom-8"
+      className="fixed right-4 bottom-4 z-50 inline-flex items-center gap-2.5 rounded-full bg-[#128C7E] py-3.5 pr-5 pl-4 text-white shadow-lg shadow-black/20 transition-all hover:scale-[1.03] hover:bg-[#0f7a6d] focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0b5f55] sm:right-8 sm:bottom-8"
     >
       <WhatsappIcon className="h-6 w-6 shrink-0" />
       <span className="text-sm font-semibold tracking-tight sm:text-base">

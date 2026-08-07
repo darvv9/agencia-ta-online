@@ -19,10 +19,10 @@ const variantStyles: Record<Variant, string> = {
   ghost: "text-primary hover:bg-primary/5",
   onPrimary:
     "bg-primary-fg text-primary hover:opacity-95 shadow-sm hover:shadow-md",
-  /* Verde do WhatsApp: o CTA precisa ser reconhecido como "abre conversa"
-     antes de ser lido. Fica igual em todos os temas, de propósito. */
+  /* Teal escuro do WhatsApp: reconhecível como "abre conversa", mas sóbrio o
+     bastante para conviver com o marinho da página. Igual em todos os temas. */
   whatsapp:
-    "bg-[#25D366] text-white font-semibold hover:bg-[#1ebe57] shadow-sm hover:shadow-lg focus-visible:outline-[#128C7E]",
+    "bg-[#128C7E] text-white font-semibold hover:bg-[#0f7a6d] shadow-sm hover:shadow-lg focus-visible:outline-[#0b5f55]",
 };
 
 const sizeStyles: Record<Size, string> = {

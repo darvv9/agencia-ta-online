@@ -11,6 +11,7 @@ type Props = { content: NicheContent };
 
 export function Sobre({ content }: Props) {
   const { sobre } = content;
+  if (!sobre) return null;
   return (
     <Section ariaLabel="Sobre">
       <Container>
