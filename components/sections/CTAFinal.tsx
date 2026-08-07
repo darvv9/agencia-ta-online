@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
+import { WhatsappIcon } from "@/components/ui/WhatsappIcon";
 import { whatsappUrl } from "@/lib/whatsapp";
 import type { NicheContent } from "@/lib/content/types";
 
@@ -32,25 +33,15 @@ export function CTAFinal({ content }: Props) {
             <Button
               href={whatsappUrl(ctaFinal.ctaMessage)}
               external
+              variant="whatsapp"
               size="lg"
             >
+              <WhatsappIcon className="h-5 w-5" />
               {ctaFinal.buttonLabel}
-              <svg
-                className="h-4 w-4"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                viewBox="0 0 24 24"
-                aria-hidden
-              >
-                <path d="M5 12h14M13 5l7 7-7 7" />
-              </svg>
             </Button>
           </div>
           <p className="text-fg-subtle mt-5 text-sm">
-            Resposta rápida e sem compromisso.
+            Abre a conversa no WhatsApp. Sem formulário e sem compromisso.
           </p>
         </div>
       </Container>

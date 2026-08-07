@@ -1,7 +1,7 @@
 import type { AnchorHTMLAttributes } from "react";
 
-type Variant = "primary" | "secondary" | "ghost" | "onPrimary";
-type Size = "md" | "lg";
+type Variant = "primary" | "secondary" | "ghost" | "onPrimary" | "whatsapp";
+type Size = "sm" | "md" | "lg";
 
 type Props = {
   href: string;
@@ -19,9 +19,14 @@ const variantStyles: Record<Variant, string> = {
   ghost: "text-primary hover:bg-primary/5",
   onPrimary:
     "bg-primary-fg text-primary hover:opacity-95 shadow-sm hover:shadow-md",
+  /* Verde do WhatsApp: o CTA precisa ser reconhecido como "abre conversa"
+     antes de ser lido. Fica igual em todos os temas, de propósito. */
+  whatsapp:
+    "bg-[#25D366] text-white font-semibold hover:bg-[#1ebe57] shadow-sm hover:shadow-lg focus-visible:outline-[#128C7E]",
 };
 
 const sizeStyles: Record<Size, string> = {
+  sm: "px-4 py-2.5 text-sm",
   md: "px-6 py-3 text-sm sm:text-base",
   lg: "px-8 py-4 text-base sm:text-lg",
 };

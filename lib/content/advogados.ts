@@ -30,10 +30,16 @@ export const advogadosContent: NicheContent = {
     ],
     subhead:
       "Apareça no Google quando alguém procura um advogado na sua área de atuação e transforme esse contato em conversa no WhatsApp. Cuidamos do site inteiro — você foca nos seus casos. Sempre dentro das normas da OAB.",
-    primaryCtaLabel: "Quero meu site",
+    primaryCtaLabel: "Falar no WhatsApp",
     primaryCtaMessage:
-      "Olá! Vim pelo site e gostaria de saber mais.",
+      "Olá! Vim pelo site e queria entender como funciona o site para o meu escritório.",
     secondaryCtaLabel: "Ver investimento",
+    ctaHint:
+      "Sem formulário e sem compromisso. Você fala direto com quem faz o site.",
+    image: {
+      src: "/advogados/retrato.jpg",
+      alt: "Advogado de terno em um escritório",
+    },
   },
 
   dores: {
@@ -155,9 +161,9 @@ export const advogadosContent: NicheContent = {
         "Sem fidelidade — cancelamento a qualquer momento",
       ],
     },
-    ctaLabel: "Quero meu site",
+    ctaLabel: "Tirar uma dúvida no WhatsApp",
     ctaMessage:
-      "Olá! Vim pelo site e gostaria de saber mais.",
+      "Olá! Vi os valores no site e queria tirar uma dúvida antes de decidir.",
     footnote:
       "A mensalidade não é custo extra. É o que mantém o seu site online, atualizado e funcionando sem que o escritório precise pensar em parte técnica.",
   },
@@ -220,7 +226,7 @@ export const advogadosContent: NicheContent = {
       "Envie uma mensagem para conversarmos. Sem compromisso, sem reunião longa.",
     buttonLabel: "Falar no WhatsApp",
     ctaMessage:
-      "Olá! Vim pelo site e gostaria de saber mais.",
+      "Olá! Quero conversar sobre o site institucional do meu escritório.",
   },
 
   footer: {
@@ -234,5 +240,5 @@ export const advogadosContent: NicheContent = {
   },
 
   floatingMessage:
-    "Olá! Vim pelo site e gostaria de saber mais.",
+    "Olá! Vim pelo site de advogados e queria saber mais.",
 };

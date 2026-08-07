@@ -22,7 +22,7 @@ export function NichePage({ content }: Props) {
   const jsonLd = buildJsonLd(content);
   return (
     <div data-theme={content.niche} className="bg-bg text-fg min-h-screen">
-      <SiteHeader />
+      <SiteHeader message={content.hero.primaryCtaMessage} />
       <main>
         <Hero content={content} />
         <Dores content={content} />

@@ -21,6 +21,10 @@ export interface NicheContent {
     primaryCtaLabel: string;
     primaryCtaMessage: string;
     secondaryCtaLabel: string;
+    /** Microcopy sob o CTA, para derrubar a fricção de "vou ter que falar com vendedor". */
+    ctaHint?: string;
+    /** Opcional: com imagem o hero vira duas colunas no desktop. */
+    image?: { src: string; alt: string };
   };
 
   dores: {
