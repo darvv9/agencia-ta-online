@@ -65,7 +65,10 @@ export function Hero({ content }: Props) {
   );
 
   return (
-    <header className="bg-bg relative isolate overflow-hidden pt-20 pb-20 sm:pt-28 sm:pb-28">
+    <header
+      data-track-section="hero"
+      className="bg-bg relative isolate overflow-hidden pt-20 pb-20 sm:pt-28 sm:pb-28"
+    >
       <div
         aria-hidden
         className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[70%]"

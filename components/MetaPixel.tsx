@@ -14,13 +14,17 @@ declare global {
 /**
  * Meta (Facebook) Pixel.
  *
- * - Carrega o pixel base via next/script (afterInteractive) e dispara PageView
- *   automaticamente em todas as páginas (montado no layout raiz).
- * - Registra um único listener delegado de clique que dispara o evento de
- *   conversão "Lead" sempre que um link de WhatsApp (wa.me / api.whatsapp.com)
- *   é clicado — cobre todos os botões/CTAs sem precisar tocar em cada um.
+ * Eventos disparados:
  *
- * O disparo do Lead NÃO impede a navegação: o fbq roda de forma síncrona
+ * - `PageView` — automático, em todas as páginas.
+ * - `ViewContent` — quando a seção de preço entra na tela. É o sinal de
+ *   *intenção* do funil: separa quem só caiu na página de quem leu até o
+ *   investimento. Serve para otimizar campanha sem depender do `Lead`,
+ *   que é raro demais para o algoritmo aprender com verba baixa.
+ * - `Lead` — clique em qualquer link de WhatsApp, com `content_name`
+ *   indicando de qual bloco da página o clique saiu.
+ *
+ * Os disparos não bloqueiam a navegação: o fbq roda de forma síncrona
  * durante o evento de clique, antes da ação padrão do navegador.
  */
 export function MetaPixel() {
@@ -35,11 +39,42 @@ export function MetaPixel() {
         href.includes("wa.me") || href.includes("api.whatsapp.com");
       if (!isWhatsapp) return;
 
-      window.fbq?.("track", "Lead");
+      const origem =
+        anchor.closest("[data-track-section]")?.getAttribute(
+          "data-track-section",
+        ) ??
+        anchor.closest("section")?.id ??
+        "desconhecido";
+
+      window.fbq?.("track", "Lead", { content_name: origem });
     }
 
     document.addEventListener("click", handleClick);
-    return () => document.removeEventListener("click", handleClick);
+
+    // Chegou até o preço = interesse real. Dispara uma única vez por visita.
+    const alvo = document.getElementById("investimento");
+    let observer: IntersectionObserver | undefined;
+    if (alvo) {
+      observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting) {
+              window.fbq?.("track", "ViewContent", {
+                content_name: "investimento",
+              });
+              observer?.disconnect();
+            }
+          }
+        },
+        { threshold: 0.4 },
+      );
+      observer.observe(alvo);
+    }
+
+    return () => {
+      document.removeEventListener("click", handleClick);
+      observer?.disconnect();
+    };
   }, []);
 
   return (

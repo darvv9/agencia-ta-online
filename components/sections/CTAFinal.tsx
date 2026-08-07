@@ -10,7 +10,7 @@ type Props = { content: NicheContent };
 export function CTAFinal({ content }: Props) {
   const { ctaFinal } = content;
   return (
-    <Section ariaLabel="Comece agora">
+    <Section id="contato" ariaLabel="Comece agora">
       <Container size="narrow">
         <div
           className="border-line bg-card relative isolate overflow-hidden rounded-3xl border p-10 text-center sm:p-14"

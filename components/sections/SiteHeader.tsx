@@ -9,7 +9,10 @@ type Props = { message: string };
 
 export function SiteHeader({ message }: Props) {
   return (
-    <div className="bg-bg/85 border-line/60 sticky top-0 z-40 border-b backdrop-blur-md backdrop-saturate-150">
+    <div
+      data-track-section="header"
+      className="bg-bg/85 border-line/60 sticky top-0 z-40 border-b backdrop-blur-md backdrop-saturate-150"
+    >
       <Container className="flex h-16 items-center justify-between gap-4">
         <Link
           href="/"
