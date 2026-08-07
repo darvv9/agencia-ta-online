@@ -1,18 +1,18 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
-import { Manrope, Source_Serif_4 } from "next/font/google";
+import { Archivo, Public_Sans } from "next/font/google";
 import { SITE } from "@/lib/site";
 import { MetaPixel } from "@/components/MetaPixel";
 import "./globals.css";
 
-const manrope = Manrope({
-  variable: "--font-manrope",
+const publicSans = Public_Sans({
+  variable: "--font-public-sans",
   subsets: ["latin"],
   display: "swap",
 });
 
-const sourceSerif = Source_Serif_4({
-  variable: "--font-source-serif",
+const archivo = Archivo({
+  variable: "--font-archivo",
   subsets: ["latin"],
   display: "swap",
 });
@@ -79,7 +79,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${manrope.variable} ${sourceSerif.variable} h-full antialiased`}
+      className={`${publicSans.variable} ${archivo.variable} h-full antialiased`}
     >
       <body className="min-h-full font-sans antialiased">
         {children}
