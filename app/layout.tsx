@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import { Archivo, Public_Sans } from "next/font/google";
 import { SITE } from "@/lib/site";
 import { MetaPixel } from "@/components/MetaPixel";
+import { WhatsappGate } from "@/components/WhatsappGate";
 import "./globals.css";
 
 const publicSans = Public_Sans({
@@ -83,6 +84,7 @@ export default function RootLayout({
     >
       <body className="min-h-full font-sans antialiased">
         {children}
+        <WhatsappGate />
         <MetaPixel />
       </body>
     </html>
